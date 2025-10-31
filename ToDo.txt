@@ -1,5 +1,6 @@
 Liste mit der ToDo, bitte immer Datum erstellen.
-❌ ✅
+❌ no nicht gemacht 
+✅ gemacht 
 
 ### 31.10.25 Uebungsstunde ###
     1- Programm: 
