@@ -1,0 +1,34 @@
+Ich hab versucht mit gpt das sbt kurz zu erstellen und zu decken, 
+muss man noch mit der Vorlesung vergleichen ob das stimmt
+
+## AUFBAU BEHALTEN BITTE ##
+
+MMVinci-htwg-MTG-Manuel-Kevin/
+├─ build.sbt                  <- Projektkonfiguration (Coverage-Einstellungen)
+├─ project/
+│  └─ plugins.sbt             <- sbt-Plugins (scoverage)
+├─ src/
+│  ├─ main/scala/...          <- Quellcode
+│  └─ test/scala/...          <- Tests
+
+
+
+# 1️⃣ Coverage aktivieren
+sbt coverage
+# => Aktiviert das scoverage-Plugin. Klassen werden für Coverage instrumentiert.
+
+# 2️⃣ Tests ausführen
+sbt test
+# => Führt alle Unit-Tests aus und sammelt Coverage-Daten.
+
+# 3️⃣ Coverage-Report erzeugen
+sbt coverageReport
+# => Liest die Coverage-Daten und erstellt einen HTML-Report.
+
+# 4️⃣ Coverage-Report im Browser öffnen
+open target/scala-2.12/scoverage-report/index.html
+# => Zeigt farblich markierte getestete/nicht getestete Zeilen an.
+
+# 5️⃣ Coverage wieder ausschalten (optional)
+sbt coverageOff
+# => Deaktiviert scoverage, normales Build wieder möglich.

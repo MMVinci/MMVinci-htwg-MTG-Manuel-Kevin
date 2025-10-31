@@ -1,0 +1,13 @@
+Liste mit der ToDo, bitte immer Datum erstellen.
+❌ ✅
+
+### 31.10.25 Uebungsstunde ###
+    1- Programm: 
+        ❌  Alles von Anfang an auf Englisch, der Prof legt wert das wichtige Begriffe der Definitionen auf englisch sind.
+            Also gleich alles auf englisch ist einfacher.
+   2- Aufgabe 3:
+        ✅  sbt einstellen
+            Daten-Ordner noch verwalten
+        ❌  Damit die Tests gut klappen sollen alle print(..) ausgaben raus und mit einem String ersetzt werden.
+
+### xx.xx.xx ###
