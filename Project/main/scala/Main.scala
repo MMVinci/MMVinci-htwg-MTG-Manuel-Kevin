@@ -1,4 +1,5 @@
 import scala.util.Random
+import scala.io.StdIn.readLine
 import java.util.Scanner
 
 @main def hello(): Unit =
@@ -8,8 +9,7 @@ import java.util.Scanner
 
   // Die Schleife läuft, solange Soldat 0 lebt und mindestens einer der Feinde noch lebt
   while (array(0) > 0 && (array(1) > 0 || array(2) > 0)) {
-    println("Du bist Soldat 0")
-    println("Es gibt folgende Feinde:")
+    println("Hallo! Soldat 0, vor dir stehen zwei Feinde.")
     printf("Soldat 1 mit %d Leben\n", array(1))
     printf("Soldat 2 mit %d Leben\n", array(2))
 
