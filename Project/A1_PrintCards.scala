@@ -15,8 +15,6 @@ object Spielfeld {
         //val s = Array("♠", "♥", "♦", "♣")
         //spades, hearts, diamonds, clubs
         val s = Array("S", "H", "D", "C")
-        
-
 
         for {
             wert <- v
@@ -35,7 +33,5 @@ object Spielfeld {
 
             println(valCard + "\n")	
         }
-
-
     }
 }
