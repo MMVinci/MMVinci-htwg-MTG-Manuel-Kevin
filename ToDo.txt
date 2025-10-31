@@ -10,5 +10,6 @@ Liste mit der ToDo, bitte immer Datum erstellen.
         ✅  sbt einstellen
             Daten-Ordner noch verwalten
         ❌  Damit die Tests gut klappen sollen alle print(..) ausgaben raus und mit einem String ersetzt werden.
+    3- Verbindung mit Discord zur Updates
 
 ### xx.xx.xx ###
