@@ -1,0 +1,5 @@
+[0m[[0m[0mdebug[0m] [0m[0mCopy resource mappings: [0m
+[0m[[0m[0mdebug[0m] [0m[0m	(C:\Users\manue\Desktop\MTG-Simulator\src\test\resources\alpha_cards.json,C:\Users\manue\Desktop\MTG-Simulator\target\scala-2.13\test-classes\alpha_cards.json)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(C:\Users\manue\Desktop\MTG-Simulator\src\test\resources\empty.json,C:\Users\manue\Desktop\MTG-Simulator\target\scala-2.13\test-classes\empty.json)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(C:\Users\manue\Desktop\MTG-Simulator\src\test\resources\invalid.json,C:\Users\manue\Desktop\MTG-Simulator\target\scala-2.13\test-classes\invalid.json)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(C:\Users\manue\Desktop\MTG-Simulator\src\test\resources\shivan.json,C:\Users\manue\Desktop\MTG-Simulator\target\scala-2.13\test-classes\shivan.json)[0m

@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Black Lotus",
+    "type": "Artifact",
+    "mana_cost": "0",
+    "rarity": "Rare",
+    "set": "Alpha",
+    "text": "{T}, Sacrifice Black Lotus: Add three mana of any one color.",
+    "power": null,
+    "toughness": null
+  },
+  {
+    "name": "Shivan Dragon",
+    "type": "Creature — Dragon",
+    "mana_cost": "4RR",
+    "rarity": "Rare",
+    "set": "Alpha",
+    "text": "Flying\n{R}: Shivan Dragon gets +1/+0 until end of turn.",
+    "power": 5,
+    "toughness": 5
+  },
+  {
+    "name": "Lightning Bolt",
+    "type": "Instant",
+    "mana_cost": "R",
+    "rarity": "Common",
+    "set": "Alpha",
+    "text": "Lightning Bolt deals 3 damage to any target.",
+    "power": null,
+    "toughness": null
+  }
+]

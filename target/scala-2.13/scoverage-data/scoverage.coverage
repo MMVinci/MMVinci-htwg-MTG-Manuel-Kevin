@@ -1,0 +1,519 @@
+# Coverage data, format version: 2.0
+# Statement data:
+# - id
+# - source path
+# - package name
+# - class name
+# - class type (Class, Object or Trait)
+# - full class name
+# - method name
+# - start offset
+# - end offset
+# - line number
+# - symbol name
+# - tree name
+# - is branch
+# - invocations count
+# - is ignored
+# - description (can be multi-line)
+# '' sign
+# ------------------------------------------
+1
+C:\Users\manue\Desktop\MTG-Simulator\src\main\scala\main.scala
+mtg
+Main
+Object
+mtg.Main
+<none>
+77
+129
+6
+scala.Predef.println
+Apply
+false
+0
+false
+scala.Predef.println("Starting MTG Alpha Simulator Load Test...")
+
+2
+C:\Users\manue\Desktop\MTG-Simulator\src\main\scala\main.scala
+mtg
+Main
+Object
+mtg.Main
+<none>
+169
+169
+8
+mtg.cards.CardLoader.loadCards$default$1
+Select
+false
+0
+false
+mtg.cards.CardLoader.loadCards$default$1
+
+3
+C:\Users\manue\Desktop\MTG-Simulator\src\main\scala\main.scala
+mtg
+Main
+Object
+mtg.Main
+<none>
+158
+180
+8
+mtg.cards.CardLoader.loadCards
+Apply
+false
+0
+false
+mtg.cards.CardLoader.loadCards(mtg.cards.CardLoader.loadCards$default$1)
+
+4
+C:\Users\manue\Desktop\MTG-Simulator\src\main\scala\main.scala
+mtg
+Main
+Object
+mtg.Main
+<none>
+192
+211
+10
+scala.collection.IterableOnceOps.nonEmpty
+Select
+false
+0
+false
+Main.this.alphaCards.nonEmpty
+
+5
+C:\Users\manue\Desktop\MTG-Simulator\src\main\scala\main.scala
+mtg
+Main
+Object
+mtg.Main
+<none>
+224
+287
+11
+scala.Predef.println
+Apply
+false
+0
+false
+scala.Predef.println(("\nLoad successful. Loaded ".+(Main.this.alphaCards.size).+(" cards."): String))
+
+6
+C:\Users\manue\Desktop\MTG-Simulator\src\main\scala\main.scala
+mtg
+Main
+Object
+mtg.Main
+<none>
+297
+327
+12
+scala.Predef.println
+Apply
+false
+0
+false
+scala.Predef.println("First Card Details:")
+
+7
+C:\Users\manue\Desktop\MTG-Simulator\src\main\scala\main.scala
+mtg
+Main
+Object
+mtg.Main
+<none>
+345
+360
+13
+scala.collection.IterableOps.head
+Select
+false
+0
+false
+Main.this.alphaCards.head
+
+8
+C:\Users\manue\Desktop\MTG-Simulator\src\main\scala\main.scala
+mtg
+Main
+Object
+mtg.Main
+<none>
+337
+361
+13
+scala.Predef.println
+Apply
+false
+0
+false
+scala.Predef.println(Main.this.alphaCards.head)
+
+9
+C:\Users\manue\Desktop\MTG-Simulator\src\main\scala\main.scala
+mtg
+Main
+Object
+mtg.Main
+<none>
+213
+368
+10
+<nosymbol>
+Block
+true
+0
+false
+{
+  scala.Predef.println(("\nLoad successful. Loaded ".+(Main.this.alphaCards.size).+(" cards."): String));
+  scala.Predef.println("First Card Details:");
+  scala.Predef.println(Main.this.alphaCards.head)
+}
+
+10
+C:\Users\manue\Desktop\MTG-Simulator\src\main\scala\main.scala
+mtg
+Main
+Object
+mtg.Main
+<none>
+385
+432
+15
+scala.Predef.println
+Apply
+false
+0
+false
+scala.Predef.println("\nLoad failed. No cards were loaded.")
+
+11
+C:\Users\manue\Desktop\MTG-Simulator\src\main\scala\main.scala
+mtg
+Main
+Object
+mtg.Main
+<none>
+385
+432
+15
+scala.Predef.println
+Block
+true
+0
+false
+scala.Predef.println("\nLoad failed. No cards were loaded.")
+
+12
+C:\Users\manue\Desktop\MTG-Simulator\src\main\scala\mtg\cards\CardLoader.scala
+mtg.cards
+CardLoader
+Object
+mtg.cards.CardLoader
+<none>
+198
+235
+8
+<nosymbol>
+Literal
+false
+0
+false
+"src/main/resources/alpha_cards.json"
+
+13
+C:\Users\manue\Desktop\MTG-Simulator\src\main\scala\mtg\cards\CardLoader.scala
+mtg.cards
+CardLoader
+Object
+mtg.cards.CardLoader
+loadCards
+361
+386
+12
+scala.io.Source.fromFile
+ApplyToImplicitArgs
+false
+0
+false
+scala.io.Source.fromFile(filePath)(io.this.Codec.fallbackSystemCodec)
+
+14
+C:\Users\manue\Desktop\MTG-Simulator\src\main\scala\mtg\cards\CardLoader.scala
+mtg.cards
+CardLoader
+Object
+mtg.cards.CardLoader
+loadCards
+413
+439
+13
+scala.collection.IterableOnceOps.mkString
+Select
+false
+0
+false
+source.getLines().mkString
+
+15
+C:\Users\manue\Desktop\MTG-Simulator\src\main\scala\mtg\cards\CardLoader.scala
+mtg.cards
+CardLoader
+Object
+mtg.cards.CardLoader
+loadCards
+388
+388
+12
+scala.util.Using.Releasable.AutoCloseableIsReleasable
+Select
+false
+0
+false
+Using.this.Releasable.AutoCloseableIsReleasable
+
+16
+C:\Users\manue\Desktop\MTG-Simulator\src\main\scala\mtg\cards\CardLoader.scala
+mtg.cards
+CardLoader
+Object
+mtg.cards.CardLoader
+loadCards
+355
+450
+12
+scala.util.Using.apply
+ApplyToImplicitArgs
+false
+0
+false
+scala.util.Using.apply[scala.io.BufferedSource, String](scala.io.Source.fromFile(filePath)(io.this.Codec.fallbackSystemCodec))(((source: scala.io.BufferedSource) => source.getLines().mkString))(Using.this.Releasable.AutoCloseableIsReleasable)
+
+17
+C:\Users\manue\Desktop\MTG-Simulator\src\main\scala\mtg\cards\CardLoader.scala
+mtg.cards
+CardLoader
+Object
+mtg.cards.CardLoader
+loadCards
+647
+647
+18
+io.circe.LowPriorityDecoders.importedDecoder
+ApplyToImplicitArgs
+false
+0
+false
+circe.this.Decoder.importedDecoder[mtg.cards.Card]((new io.circe.export.Exported[io.circe.Decoder[mtg.cards.Card]]((shapeless.lazily.apply[io.circe.generic.decoding.DerivedDecoder[mtg.cards.Card]]({
+  val inst$macro$20: io.circe.generic.decoding.DerivedDecoder[mtg.cards.Card] = {
+    final class anon$importedDecoder$macro$19 extends AnyRef with Serializable {
+      def <init>(): anon$importedDecoder$macro$19 = {
+        anon$importedDecoder$macro$19.super.<init>();
+        ()
+      };
+      <stable> <accessor> lazy val inst$macro$1: io.circe.generic.decoding.DerivedDecoder[mtg.cards.Card] = decoding.this.DerivedDecoder.deriveDecoder[mtg.cards.Card, shapeless.labelled.FieldType[Symbol @@ String("name"),String] :: shapeless.labelled.FieldType[Symbol @@ String("type"),String] :: shapeless.labelled.FieldType[Symbol @@ String("mana_cost"),String] :: shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out](shapeless.this.LabelledGeneric.materializeProduct[mtg.cards.Card, (Symbol @@ String("name")) :: (Symbol @@ String("type")) :: (Symbol @@ String("mana_cost")) :: (Symbol @@ String("rarity")) :: (Symbol @@ String("set")) :: (Symbol @@ String("text")) :: (Symbol @@ String("power")) :: (Symbol @@ String("toughness")) :: shapeless.HNil, String :: String :: String :: String :: String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil, shapeless.labelled.FieldType[Symbol @@ String("name"),String] :: shapeless.labelled.FieldType[Symbol @@ String("type"),String] :: shapeless.labelled.FieldType[Symbol @@ String("mana_cost"),String] :: shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out](DefaultSymbolicLabelling.instance[mtg.cards.Card, (Symbol @@ String("name")) :: (Symbol @@ String("type")) :: (Symbol @@ String("mana_cost")) :: (Symbol @@ String("rarity")) :: (Symbol @@ String("set")) :: (Symbol @@ String("text")) :: (Symbol @@ String("power")) :: (Symbol @@ String("toughness")) :: shapeless.HNil](shapeless.::.apply[Symbol @@ String("name"), (Symbol @@ String("type")) :: (Symbol @@ String("mana_cost")) :: (Symbol @@ String("rarity")) :: (Symbol @@ String("set")) :: (Symbol @@ String("text")) :: (Symbol @@ String("power")) :: (Symbol @@ String("toughness")) :: shapeless.HNil.type](scala.Symbol.apply("name").asInstanceOf[Symbol @@ String("name")], shapeless.::.apply[Symbol @@ String("type"), (Symbol @@ String("mana_cost")) :: (Symbol @@ String("rarity")) :: (Symbol @@ String("set")) :: (Symbol @@ String("text")) :: (Symbol @@ String("power")) :: (Symbol @@ String("toughness")) :: shapeless.HNil.type](scala.Symbol.apply("type").asInstanceOf[Symbol @@ String("type")], shapeless.::.apply[Symbol @@ String("mana_cost"), (Symbol @@ String("rarity")) :: (Symbol @@ String("set")) :: (Symbol @@ String("text")) :: (Symbol @@ String("power")) :: (Symbol @@ String("toughness")) :: shapeless.HNil.type](scala.Symbol.apply("mana_cost").asInstanceOf[Symbol @@ String("mana_cost")], shapeless.::.apply[Symbol @@ String("rarity"), (Symbol @@ String("set")) :: (Symbol @@ String("text")) :: (Symbol @@ String("power")) :: (Symbol @@ String("toughness")) :: shapeless.HNil.type](scala.Symbol.apply("rarity").asInstanceOf[Symbol @@ String("rarity")], shapeless.::.apply[Symbol @@ String("set"), (Symbol @@ String("text")) :: (Symbol @@ String("power")) :: (Symbol @@ String("toughness")) :: shapeless.HNil.type](scala.Symbol.apply("set").asInstanceOf[Symbol @@ String("set")], shapeless.::.apply[Symbol @@ String("text"), (Symbol @@ String("power")) :: (Symbol @@ String("toughness")) :: shapeless.HNil.type](scala.Symbol.apply("text").asInstanceOf[Symbol @@ String("text")], shapeless.::.apply[Symbol @@ String("power"), (Symbol @@ String("toughness")) :: shapeless.HNil.type](scala.Symbol.apply("power").asInstanceOf[Symbol @@ String("power")], shapeless.::.apply[Symbol @@ String("toughness"), shapeless.HNil.type](scala.Symbol.apply("toughness").asInstanceOf[Symbol @@ String("toughness")], shapeless.HNil))))))))), Generic.instance[mtg.cards.Card, String :: String :: String :: String :: String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil](((x0$3: mtg.cards.Card) => x0$3 match {
+  case (name: String, type: String, mana_cost: String, rarity: String, set: String, text: String, power: Option[Int], toughness: Option[Int]): mtg.cards.Card((pat$macro$10 @ _), (pat$macro$11 @ _), (pat$macro$12 @ _), (pat$macro$13 @ _), (pat$macro$14 @ _), (pat$macro$15 @ _), (pat$macro$16 @ _), (pat$macro$17 @ _)) => shapeless.::.apply[String, String :: String :: String :: String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil.type](pat$macro$10, shapeless.::.apply[String, String :: String :: String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil.type](pat$macro$11, shapeless.::.apply[String, String :: String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil.type](pat$macro$12, shapeless.::.apply[String, String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil.type](pat$macro$13, shapeless.::.apply[String, String :: Option[Int] :: Option[Int] :: shapeless.HNil.type](pat$macro$14, shapeless.::.apply[String, Option[Int] :: Option[Int] :: shapeless.HNil.type](pat$macro$15, shapeless.::.apply[Option[Int], Option[Int] :: shapeless.HNil.type](pat$macro$16, shapeless.::.apply[Option[Int], shapeless.HNil.type](pat$macro$17, shapeless.HNil)))))))).asInstanceOf[String :: String :: String :: String :: String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil]
+}), ((x0$4: String :: String :: String :: String :: String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil) => x0$4 match {
+  case (head: String, tail: String :: String :: String :: String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil): String :: String :: String :: String :: String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil((pat$macro$10 @ _), (head: String, tail: String :: String :: String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil): String :: String :: String :: String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil((pat$macro$11 @ _), (head: String, tail: String :: String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil): String :: String :: String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil((pat$macro$12 @ _), (head: String, tail: String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil): String :: String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil((pat$macro$13 @ _), (head: String, tail: String :: Option[Int] :: Option[Int] :: shapeless.HNil): String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil((pat$macro$14 @ _), (head: String, tail: Option[Int] :: Option[Int] :: shapeless.HNil): String :: Option[Int] :: Option[Int] :: shapeless.HNil((pat$macro$15 @ _), (head: Option[Int], tail: Option[Int] :: shapeless.HNil): Option[Int] :: Option[Int] :: shapeless.HNil((pat$macro$16 @ _), (head: Option[Int], tail: shapeless.HNil): Option[Int] :: shapeless.HNil((pat$macro$17 @ _), shapeless.HNil)))))))) => cards.this.Card.apply(pat$macro$10, pat$macro$11, pat$macro$12, pat$macro$13, pat$macro$14, pat$macro$15, pat$macro$16, pat$macro$17).asInstanceOf[mtg.cards.Card]
+})), hlist.this.ZipWithKeys.hconsZipWithKeys[Symbol @@ String("name"), String, (Symbol @@ String("type")) :: (Symbol @@ String("mana_cost")) :: (Symbol @@ String("rarity")) :: (Symbol @@ String("set")) :: (Symbol @@ String("text")) :: (Symbol @@ String("power")) :: (Symbol @@ String("toughness")) :: shapeless.HNil, String :: String :: String :: String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil, shapeless.labelled.FieldType[Symbol @@ String("type"),String] :: shapeless.labelled.FieldType[Symbol @@ String("mana_cost"),String] :: shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out](hlist.this.ZipWithKeys.hconsZipWithKeys[Symbol @@ String("type"), String, (Symbol @@ String("mana_cost")) :: (Symbol @@ String("rarity")) :: (Symbol @@ String("set")) :: (Symbol @@ String("text")) :: (Symbol @@ String("power")) :: (Symbol @@ String("toughness")) :: shapeless.HNil, String :: String :: String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil, shapeless.labelled.FieldType[Symbol @@ String("mana_cost"),String] :: shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out](hlist.this.ZipWithKeys.hconsZipWithKeys[Symbol @@ String("mana_cost"), String, (Symbol @@ String("rarity")) :: (Symbol @@ String("set")) :: (Symbol @@ String("text")) :: (Symbol @@ String("power")) :: (Symbol @@ String("toughness")) :: shapeless.HNil, String :: String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil, shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out](hlist.this.ZipWithKeys.hconsZipWithKeys[Symbol @@ String("rarity"), String, (Symbol @@ String("set")) :: (Symbol @@ String("text")) :: (Symbol @@ String("power")) :: (Symbol @@ String("toughness")) :: shapeless.HNil, String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil, shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out](hlist.this.ZipWithKeys.hconsZipWithKeys[Symbol @@ String("set"), String, (Symbol @@ String("text")) :: (Symbol @@ String("power")) :: (Symbol @@ String("toughness")) :: shapeless.HNil, String :: Option[Int] :: Option[Int] :: shapeless.HNil, shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out](hlist.this.ZipWithKeys.hconsZipWithKeys[Symbol @@ String("text"), String, (Symbol @@ String("power")) :: (Symbol @@ String("toughness")) :: shapeless.HNil, Option[Int] :: Option[Int] :: shapeless.HNil, shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out](hlist.this.ZipWithKeys.hconsZipWithKeys[Symbol @@ String("power"), Option[Int], (Symbol @@ String("toughness")) :: shapeless.HNil, Option[Int] :: shapeless.HNil, shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out](hlist.this.ZipWithKeys.hconsZipWithKeys[Symbol @@ String("toughness"), Option[Int], shapeless.HNil, shapeless.HNil, shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out](hlist.this.ZipWithKeys.hnilZipWithKeys, Witness.mkWitness[Symbol with shapeless.tag.Tagged[String("toughness")]](scala.Symbol.apply("toughness").asInstanceOf[Symbol @@ String("toughness")].asInstanceOf[Symbol with shapeless.tag.Tagged[String("toughness")]])), Witness.mkWitness[Symbol with shapeless.tag.Tagged[String("power")]](scala.Symbol.apply("power").asInstanceOf[Symbol @@ String("power")].asInstanceOf[Symbol with shapeless.tag.Tagged[String("power")]])), Witness.mkWitness[Symbol with shapeless.tag.Tagged[String("text")]](scala.Symbol.apply("text").asInstanceOf[Symbol @@ String("text")].asInstanceOf[Symbol with shapeless.tag.Tagged[String("text")]])), Witness.mkWitness[Symbol with shapeless.tag.Tagged[String("set")]](scala.Symbol.apply("set").asInstanceOf[Symbol @@ String("set")].asInstanceOf[Symbol with shapeless.tag.Tagged[String("set")]])), Witness.mkWitness[Symbol with shapeless.tag.Tagged[String("rarity")]](scala.Symbol.apply("rarity").asInstanceOf[Symbol @@ String("rarity")].asInstanceOf[Symbol with shapeless.tag.Tagged[String("rarity")]])), Witness.mkWitness[Symbol with shapeless.tag.Tagged[String("mana_cost")]](scala.Symbol.apply("mana_cost").asInstanceOf[Symbol @@ String("mana_cost")].asInstanceOf[Symbol with shapeless.tag.Tagged[String("mana_cost")]])), Witness.mkWitness[Symbol with shapeless.tag.Tagged[String("type")]](scala.Symbol.apply("type").asInstanceOf[Symbol @@ String("type")].asInstanceOf[Symbol with shapeless.tag.Tagged[String("type")]])), Witness.mkWitness[Symbol with shapeless.tag.Tagged[String("name")]](scala.Symbol.apply("name").asInstanceOf[Symbol @@ String("name")].asInstanceOf[Symbol with shapeless.tag.Tagged[String("name")]])), scala.this.<:<.refl[shapeless.labelled.FieldType[Symbol @@ String("name"),String] :: shapeless.labelled.FieldType[Symbol @@ String("type"),String] :: shapeless.labelled.FieldType[Symbol @@ String("mana_cost"),String] :: shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]), shapeless.Lazy.apply[io.circe.generic.decoding.ReprDecoder[shapeless.labelled.FieldType[Symbol @@ String("name"),String] :: shapeless.labelled.FieldType[Symbol @@ String("type"),String] :: shapeless.labelled.FieldType[Symbol @@ String("mana_cost"),String] :: shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]](anon$importedDecoder$macro$19.this.inst$macro$18)).asInstanceOf[io.circe.generic.decoding.DerivedDecoder[mtg.cards.Card]];
+      <stable> <accessor> lazy val inst$macro$18: io.circe.generic.decoding.ReprDecoder[shapeless.labelled.FieldType[Symbol @@ String("name"),String] :: shapeless.labelled.FieldType[Symbol @@ String("type"),String] :: shapeless.labelled.FieldType[Symbol @@ String("mana_cost"),String] :: shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out] = ({
+  final class $anon extends io.circe.generic.decoding.ReprDecoder[shapeless.labelled.FieldType[Symbol @@ String("name"),String] :: shapeless.labelled.FieldType[Symbol @@ String("type"),String] :: shapeless.labelled.FieldType[Symbol @@ String("mana_cost"),String] :: shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out] {
+    def <init>(): <$anon: io.circe.generic.decoding.ReprDecoder[shapeless.labelled.FieldType[Symbol @@ String("name"),String] :: shapeless.labelled.FieldType[Symbol @@ String("type"),String] :: shapeless.labelled.FieldType[Symbol @@ String("mana_cost"),String] :: shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]> = {
+      $anon.super.<init>();
+      ()
+    };
+    private[this] val circeGenericDecoderFortext: io.circe.Decoder[String] = circe.this.Decoder.decodeString;
+    private[this] val circeGenericDecoderFortoughness: io.circe.Decoder[Option[Int]] = circe.this.Decoder.decodeOption[Int](circe.this.Decoder.decodeInt);
+    final def apply(c: io.circe.HCursor): io.circe.Decoder.Result[shapeless.labelled.FieldType[Symbol @@ String("name"),String] :: shapeless.labelled.FieldType[Symbol @@ String("type"),String] :: shapeless.labelled.FieldType[Symbol @@ String("mana_cost"),String] :: shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out] = ReprDecoder.consResults[io.circe.Decoder.Result, Symbol @@ String("name"), String, shapeless.labelled.FieldType[Symbol @@ String("type"),String] :: shapeless.labelled.FieldType[Symbol @@ String("mana_cost"),String] :: shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]($anon.this.circeGenericDecoderFortext.tryDecode(c.downField("name")), ReprDecoder.consResults[io.circe.Decoder.Result, Symbol @@ String("type"), String, shapeless.labelled.FieldType[Symbol @@ String("mana_cost"),String] :: shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]($anon.this.circeGenericDecoderFortext.tryDecode(c.downField("type")), ReprDecoder.consResults[io.circe.Decoder.Result, Symbol @@ String("mana_cost"), String, shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]($anon.this.circeGenericDecoderFortext.tryDecode(c.downField("mana_cost")), ReprDecoder.consResults[io.circe.Decoder.Result, Symbol @@ String("rarity"), String, shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]($anon.this.circeGenericDecoderFortext.tryDecode(c.downField("rarity")), ReprDecoder.consResults[io.circe.Decoder.Result, Symbol @@ String("set"), String, shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]($anon.this.circeGenericDecoderFortext.tryDecode(c.downField("set")), ReprDecoder.consResults[io.circe.Decoder.Result, Symbol @@ String("text"), String, shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]($anon.this.circeGenericDecoderFortext.tryDecode(c.downField("text")), ReprDecoder.consResults[io.circe.Decoder.Result, Symbol @@ String("power"), Option[Int], shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]($anon.this.circeGenericDecoderFortoughness.tryDecode(c.downField("power")), ReprDecoder.consResults[io.circe.Decoder.Result, Symbol @@ String("toughness"), Option[Int], shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]($anon.this.circeGenericDecoderFortoughness.tryDecode(c.downField("toughness")), ReprDecoder.hnilResult)(io.circe.Decoder.resultInstance))(io.circe.Decoder.resultInstance))(io.circe.Decoder.resultInstance))(io.circe.Decoder.resultInstance))(io.circe.Decoder.resultInstance))(io.circe.Decoder.resultInstance))(io.circe.Decoder.resultInstance))(io.circe.Decoder.resultInstance);
+    final override def decodeAccumulating(c: io.circe.HCursor): io.circe.Decoder.AccumulatingResult[shapeless.labelled.FieldType[Symbol @@ String("name"),String] :: shapeless.labelled.FieldType[Symbol @@ String("type"),String] :: shapeless.labelled.FieldType[Symbol @@ String("mana_cost"),String] :: shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out] = ReprDecoder.consResults[io.circe.Decoder.AccumulatingResult, Symbol @@ String("name"), String, shapeless.labelled.FieldType[Symbol @@ String("type"),String] :: shapeless.labelled.FieldType[Symbol @@ String("mana_cost"),String] :: shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]($anon.this.circeGenericDecoderFortext.tryDecodeAccumulating(c.downField("name")), ReprDecoder.consResults[io.circe.Decoder.AccumulatingResult, Symbol @@ String("type"), String, shapeless.labelled.FieldType[Symbol @@ String("mana_cost"),String] :: shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]($anon.this.circeGenericDecoderFortext.tryDecodeAccumulating(c.downField("type")), ReprDecoder.consResults[io.circe.Decoder.AccumulatingResult, Symbol @@ String("mana_cost"), String, shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]($anon.this.circeGenericDecoderFortext.tryDecodeAccumulating(c.downField("mana_cost")), ReprDecoder.consResults[io.circe.Decoder.AccumulatingResult, Symbol @@ String("rarity"), String, shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]($anon.this.circeGenericDecoderFortext.tryDecodeAccumulating(c.downField("rarity")), ReprDecoder.consResults[io.circe.Decoder.AccumulatingResult, Symbol @@ String("set"), String, shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]($anon.this.circeGenericDecoderFortext.tryDecodeAccumulating(c.downField("set")), ReprDecoder.consResults[io.circe.Decoder.AccumulatingResult, Symbol @@ String("text"), String, shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]($anon.this.circeGenericDecoderFortext.tryDecodeAccumulating(c.downField("text")), ReprDecoder.consResults[io.circe.Decoder.AccumulatingResult, Symbol @@ String("power"), Option[Int], shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]($anon.this.circeGenericDecoderFortoughness.tryDecodeAccumulating(c.downField("power")), ReprDecoder.consResults[io.circe.Decoder.AccumulatingResult, Symbol @@ String("toughness"), Option[Int], shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]($anon.this.circeGenericDecoderFortoughness.tryDecodeAccumulating(c.downField("toughness")), ReprDecoder.hnilResultAccumulating)(io.circe.Decoder.accumulatingResultInstance))(io.circe.Decoder.accumulatingResultInstance))(io.circe.Decoder.accumulatingResultInstance))(io.circe.Decoder.accumulatingResultInstance))(io.circe.Decoder.accumulatingResultInstance))(io.circe.Decoder.accumulatingResultInstance))(io.circe.Decoder.accumulatingResultInstance))(io.circe.Decoder.accumulatingResultInstance)
+  };
+  new $anon()
+}: io.circe.generic.decoding.ReprDecoder[shapeless.labelled.FieldType[Symbol @@ String("name"),String] :: shapeless.labelled.FieldType[Symbol @@ String("type"),String] :: shapeless.labelled.FieldType[Symbol @@ String("mana_cost"),String] :: shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]).asInstanceOf[io.circe.generic.decoding.ReprDecoder[shapeless.labelled.FieldType[Symbol @@ String("name"),String] :: shapeless.labelled.FieldType[Symbol @@ String("type"),String] :: shapeless.labelled.FieldType[Symbol @@ String("mana_cost"),String] :: shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]]
+    };
+    new anon$importedDecoder$macro$19().inst$macro$1
+  };
+  shapeless.Lazy.apply[io.circe.generic.decoding.DerivedDecoder[mtg.cards.Card]](inst$macro$20)
+}): io.circe.Decoder[mtg.cards.Card])): io.circe.export.Exported[io.circe.Decoder[mtg.cards.Card]]))
+
+18
+C:\Users\manue\Desktop\MTG-Simulator\src\main\scala\mtg\cards\CardLoader.scala
+mtg.cards
+CardLoader
+Object
+mtg.cards.CardLoader
+loadCards
+647
+647
+18
+io.circe.Decoder.decodeList
+ApplyToImplicitArgs
+false
+0
+false
+circe.this.Decoder.decodeList[mtg.cards.Card](circe.this.Decoder.importedDecoder[mtg.cards.Card]((new io.circe.export.Exported[io.circe.Decoder[mtg.cards.Card]]((shapeless.lazily.apply[io.circe.generic.decoding.DerivedDecoder[mtg.cards.Card]]({
+  val inst$macro$20: io.circe.generic.decoding.DerivedDecoder[mtg.cards.Card] = {
+    final class anon$importedDecoder$macro$19 extends AnyRef with Serializable {
+      def <init>(): anon$importedDecoder$macro$19 = {
+        anon$importedDecoder$macro$19.super.<init>();
+        ()
+      };
+      <stable> <accessor> lazy val inst$macro$1: io.circe.generic.decoding.DerivedDecoder[mtg.cards.Card] = decoding.this.DerivedDecoder.deriveDecoder[mtg.cards.Card, shapeless.labelled.FieldType[Symbol @@ String("name"),String] :: shapeless.labelled.FieldType[Symbol @@ String("type"),String] :: shapeless.labelled.FieldType[Symbol @@ String("mana_cost"),String] :: shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out](shapeless.this.LabelledGeneric.materializeProduct[mtg.cards.Card, (Symbol @@ String("name")) :: (Symbol @@ String("type")) :: (Symbol @@ String("mana_cost")) :: (Symbol @@ String("rarity")) :: (Symbol @@ String("set")) :: (Symbol @@ String("text")) :: (Symbol @@ String("power")) :: (Symbol @@ String("toughness")) :: shapeless.HNil, String :: String :: String :: String :: String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil, shapeless.labelled.FieldType[Symbol @@ String("name"),String] :: shapeless.labelled.FieldType[Symbol @@ String("type"),String] :: shapeless.labelled.FieldType[Symbol @@ String("mana_cost"),String] :: shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out](DefaultSymbolicLabelling.instance[mtg.cards.Card, (Symbol @@ String("name")) :: (Symbol @@ String("type")) :: (Symbol @@ String("mana_cost")) :: (Symbol @@ String("rarity")) :: (Symbol @@ String("set")) :: (Symbol @@ String("text")) :: (Symbol @@ String("power")) :: (Symbol @@ String("toughness")) :: shapeless.HNil](shapeless.::.apply[Symbol @@ String("name"), (Symbol @@ String("type")) :: (Symbol @@ String("mana_cost")) :: (Symbol @@ String("rarity")) :: (Symbol @@ String("set")) :: (Symbol @@ String("text")) :: (Symbol @@ String("power")) :: (Symbol @@ String("toughness")) :: shapeless.HNil.type](scala.Symbol.apply("name").asInstanceOf[Symbol @@ String("name")], shapeless.::.apply[Symbol @@ String("type"), (Symbol @@ String("mana_cost")) :: (Symbol @@ String("rarity")) :: (Symbol @@ String("set")) :: (Symbol @@ String("text")) :: (Symbol @@ String("power")) :: (Symbol @@ String("toughness")) :: shapeless.HNil.type](scala.Symbol.apply("type").asInstanceOf[Symbol @@ String("type")], shapeless.::.apply[Symbol @@ String("mana_cost"), (Symbol @@ String("rarity")) :: (Symbol @@ String("set")) :: (Symbol @@ String("text")) :: (Symbol @@ String("power")) :: (Symbol @@ String("toughness")) :: shapeless.HNil.type](scala.Symbol.apply("mana_cost").asInstanceOf[Symbol @@ String("mana_cost")], shapeless.::.apply[Symbol @@ String("rarity"), (Symbol @@ String("set")) :: (Symbol @@ String("text")) :: (Symbol @@ String("power")) :: (Symbol @@ String("toughness")) :: shapeless.HNil.type](scala.Symbol.apply("rarity").asInstanceOf[Symbol @@ String("rarity")], shapeless.::.apply[Symbol @@ String("set"), (Symbol @@ String("text")) :: (Symbol @@ String("power")) :: (Symbol @@ String("toughness")) :: shapeless.HNil.type](scala.Symbol.apply("set").asInstanceOf[Symbol @@ String("set")], shapeless.::.apply[Symbol @@ String("text"), (Symbol @@ String("power")) :: (Symbol @@ String("toughness")) :: shapeless.HNil.type](scala.Symbol.apply("text").asInstanceOf[Symbol @@ String("text")], shapeless.::.apply[Symbol @@ String("power"), (Symbol @@ String("toughness")) :: shapeless.HNil.type](scala.Symbol.apply("power").asInstanceOf[Symbol @@ String("power")], shapeless.::.apply[Symbol @@ String("toughness"), shapeless.HNil.type](scala.Symbol.apply("toughness").asInstanceOf[Symbol @@ String("toughness")], shapeless.HNil))))))))), Generic.instance[mtg.cards.Card, String :: String :: String :: String :: String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil](((x0$3: mtg.cards.Card) => x0$3 match {
+  case (name: String, type: String, mana_cost: String, rarity: String, set: String, text: String, power: Option[Int], toughness: Option[Int]): mtg.cards.Card((pat$macro$10 @ _), (pat$macro$11 @ _), (pat$macro$12 @ _), (pat$macro$13 @ _), (pat$macro$14 @ _), (pat$macro$15 @ _), (pat$macro$16 @ _), (pat$macro$17 @ _)) => shapeless.::.apply[String, String :: String :: String :: String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil.type](pat$macro$10, shapeless.::.apply[String, String :: String :: String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil.type](pat$macro$11, shapeless.::.apply[String, String :: String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil.type](pat$macro$12, shapeless.::.apply[String, String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil.type](pat$macro$13, shapeless.::.apply[String, String :: Option[Int] :: Option[Int] :: shapeless.HNil.type](pat$macro$14, shapeless.::.apply[String, Option[Int] :: Option[Int] :: shapeless.HNil.type](pat$macro$15, shapeless.::.apply[Option[Int], Option[Int] :: shapeless.HNil.type](pat$macro$16, shapeless.::.apply[Option[Int], shapeless.HNil.type](pat$macro$17, shapeless.HNil)))))))).asInstanceOf[String :: String :: String :: String :: String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil]
+}), ((x0$4: String :: String :: String :: String :: String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil) => x0$4 match {
+  case (head: String, tail: String :: String :: String :: String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil): String :: String :: String :: String :: String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil((pat$macro$10 @ _), (head: String, tail: String :: String :: String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil): String :: String :: String :: String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil((pat$macro$11 @ _), (head: String, tail: String :: String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil): String :: String :: String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil((pat$macro$12 @ _), (head: String, tail: String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil): String :: String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil((pat$macro$13 @ _), (head: String, tail: String :: Option[Int] :: Option[Int] :: shapeless.HNil): String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil((pat$macro$14 @ _), (head: String, tail: Option[Int] :: Option[Int] :: shapeless.HNil): String :: Option[Int] :: Option[Int] :: shapeless.HNil((pat$macro$15 @ _), (head: Option[Int], tail: Option[Int] :: shapeless.HNil): Option[Int] :: Option[Int] :: shapeless.HNil((pat$macro$16 @ _), (head: Option[Int], tail: shapeless.HNil): Option[Int] :: shapeless.HNil((pat$macro$17 @ _), shapeless.HNil)))))))) => cards.this.Card.apply(pat$macro$10, pat$macro$11, pat$macro$12, pat$macro$13, pat$macro$14, pat$macro$15, pat$macro$16, pat$macro$17).asInstanceOf[mtg.cards.Card]
+})), hlist.this.ZipWithKeys.hconsZipWithKeys[Symbol @@ String("name"), String, (Symbol @@ String("type")) :: (Symbol @@ String("mana_cost")) :: (Symbol @@ String("rarity")) :: (Symbol @@ String("set")) :: (Symbol @@ String("text")) :: (Symbol @@ String("power")) :: (Symbol @@ String("toughness")) :: shapeless.HNil, String :: String :: String :: String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil, shapeless.labelled.FieldType[Symbol @@ String("type"),String] :: shapeless.labelled.FieldType[Symbol @@ String("mana_cost"),String] :: shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out](hlist.this.ZipWithKeys.hconsZipWithKeys[Symbol @@ String("type"), String, (Symbol @@ String("mana_cost")) :: (Symbol @@ String("rarity")) :: (Symbol @@ String("set")) :: (Symbol @@ String("text")) :: (Symbol @@ String("power")) :: (Symbol @@ String("toughness")) :: shapeless.HNil, String :: String :: String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil, shapeless.labelled.FieldType[Symbol @@ String("mana_cost"),String] :: shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out](hlist.this.ZipWithKeys.hconsZipWithKeys[Symbol @@ String("mana_cost"), String, (Symbol @@ String("rarity")) :: (Symbol @@ String("set")) :: (Symbol @@ String("text")) :: (Symbol @@ String("power")) :: (Symbol @@ String("toughness")) :: shapeless.HNil, String :: String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil, shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out](hlist.this.ZipWithKeys.hconsZipWithKeys[Symbol @@ String("rarity"), String, (Symbol @@ String("set")) :: (Symbol @@ String("text")) :: (Symbol @@ String("power")) :: (Symbol @@ String("toughness")) :: shapeless.HNil, String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil, shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out](hlist.this.ZipWithKeys.hconsZipWithKeys[Symbol @@ String("set"), String, (Symbol @@ String("text")) :: (Symbol @@ String("power")) :: (Symbol @@ String("toughness")) :: shapeless.HNil, String :: Option[Int] :: Option[Int] :: shapeless.HNil, shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out](hlist.this.ZipWithKeys.hconsZipWithKeys[Symbol @@ String("text"), String, (Symbol @@ String("power")) :: (Symbol @@ String("toughness")) :: shapeless.HNil, Option[Int] :: Option[Int] :: shapeless.HNil, shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out](hlist.this.ZipWithKeys.hconsZipWithKeys[Symbol @@ String("power"), Option[Int], (Symbol @@ String("toughness")) :: shapeless.HNil, Option[Int] :: shapeless.HNil, shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out](hlist.this.ZipWithKeys.hconsZipWithKeys[Symbol @@ String("toughness"), Option[Int], shapeless.HNil, shapeless.HNil, shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out](hlist.this.ZipWithKeys.hnilZipWithKeys, Witness.mkWitness[Symbol with shapeless.tag.Tagged[String("toughness")]](scala.Symbol.apply("toughness").asInstanceOf[Symbol @@ String("toughness")].asInstanceOf[Symbol with shapeless.tag.Tagged[String("toughness")]])), Witness.mkWitness[Symbol with shapeless.tag.Tagged[String("power")]](scala.Symbol.apply("power").asInstanceOf[Symbol @@ String("power")].asInstanceOf[Symbol with shapeless.tag.Tagged[String("power")]])), Witness.mkWitness[Symbol with shapeless.tag.Tagged[String("text")]](scala.Symbol.apply("text").asInstanceOf[Symbol @@ String("text")].asInstanceOf[Symbol with shapeless.tag.Tagged[String("text")]])), Witness.mkWitness[Symbol with shapeless.tag.Tagged[String("set")]](scala.Symbol.apply("set").asInstanceOf[Symbol @@ String("set")].asInstanceOf[Symbol with shapeless.tag.Tagged[String("set")]])), Witness.mkWitness[Symbol with shapeless.tag.Tagged[String("rarity")]](scala.Symbol.apply("rarity").asInstanceOf[Symbol @@ String("rarity")].asInstanceOf[Symbol with shapeless.tag.Tagged[String("rarity")]])), Witness.mkWitness[Symbol with shapeless.tag.Tagged[String("mana_cost")]](scala.Symbol.apply("mana_cost").asInstanceOf[Symbol @@ String("mana_cost")].asInstanceOf[Symbol with shapeless.tag.Tagged[String("mana_cost")]])), Witness.mkWitness[Symbol with shapeless.tag.Tagged[String("type")]](scala.Symbol.apply("type").asInstanceOf[Symbol @@ String("type")].asInstanceOf[Symbol with shapeless.tag.Tagged[String("type")]])), Witness.mkWitness[Symbol with shapeless.tag.Tagged[String("name")]](scala.Symbol.apply("name").asInstanceOf[Symbol @@ String("name")].asInstanceOf[Symbol with shapeless.tag.Tagged[String("name")]])), scala.this.<:<.refl[shapeless.labelled.FieldType[Symbol @@ String("name"),String] :: shapeless.labelled.FieldType[Symbol @@ String("type"),String] :: shapeless.labelled.FieldType[Symbol @@ String("mana_cost"),String] :: shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]), shapeless.Lazy.apply[io.circe.generic.decoding.ReprDecoder[shapeless.labelled.FieldType[Symbol @@ String("name"),String] :: shapeless.labelled.FieldType[Symbol @@ String("type"),String] :: shapeless.labelled.FieldType[Symbol @@ String("mana_cost"),String] :: shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]](anon$importedDecoder$macro$19.this.inst$macro$18)).asInstanceOf[io.circe.generic.decoding.DerivedDecoder[mtg.cards.Card]];
+      <stable> <accessor> lazy val inst$macro$18: io.circe.generic.decoding.ReprDecoder[shapeless.labelled.FieldType[Symbol @@ String("name"),String] :: shapeless.labelled.FieldType[Symbol @@ String("type"),String] :: shapeless.labelled.FieldType[Symbol @@ String("mana_cost"),String] :: shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out] = ({
+  final class $anon extends io.circe.generic.decoding.ReprDecoder[shapeless.labelled.FieldType[Symbol @@ String("name"),String] :: shapeless.labelled.FieldType[Symbol @@ String("type"),String] :: shapeless.labelled.FieldType[Symbol @@ String("mana_cost"),String] :: shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out] {
+    def <init>(): <$anon: io.circe.generic.decoding.ReprDecoder[shapeless.labelled.FieldType[Symbol @@ String("name"),String] :: shapeless.labelled.FieldType[Symbol @@ String("type"),String] :: shapeless.labelled.FieldType[Symbol @@ String("mana_cost"),String] :: shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]> = {
+      $anon.super.<init>();
+      ()
+    };
+    private[this] val circeGenericDecoderFortext: io.circe.Decoder[String] = circe.this.Decoder.decodeString;
+    private[this] val circeGenericDecoderFortoughness: io.circe.Decoder[Option[Int]] = circe.this.Decoder.decodeOption[Int](circe.this.Decoder.decodeInt);
+    final def apply(c: io.circe.HCursor): io.circe.Decoder.Result[shapeless.labelled.FieldType[Symbol @@ String("name"),String] :: shapeless.labelled.FieldType[Symbol @@ String("type"),String] :: shapeless.labelled.FieldType[Symbol @@ String("mana_cost"),String] :: shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out] = ReprDecoder.consResults[io.circe.Decoder.Result, Symbol @@ String("name"), String, shapeless.labelled.FieldType[Symbol @@ String("type"),String] :: shapeless.labelled.FieldType[Symbol @@ String("mana_cost"),String] :: shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]($anon.this.circeGenericDecoderFortext.tryDecode(c.downField("name")), ReprDecoder.consResults[io.circe.Decoder.Result, Symbol @@ String("type"), String, shapeless.labelled.FieldType[Symbol @@ String("mana_cost"),String] :: shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]($anon.this.circeGenericDecoderFortext.tryDecode(c.downField("type")), ReprDecoder.consResults[io.circe.Decoder.Result, Symbol @@ String("mana_cost"), String, shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]($anon.this.circeGenericDecoderFortext.tryDecode(c.downField("mana_cost")), ReprDecoder.consResults[io.circe.Decoder.Result, Symbol @@ String("rarity"), String, shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]($anon.this.circeGenericDecoderFortext.tryDecode(c.downField("rarity")), ReprDecoder.consResults[io.circe.Decoder.Result, Symbol @@ String("set"), String, shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]($anon.this.circeGenericDecoderFortext.tryDecode(c.downField("set")), ReprDecoder.consResults[io.circe.Decoder.Result, Symbol @@ String("text"), String, shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]($anon.this.circeGenericDecoderFortext.tryDecode(c.downField("text")), ReprDecoder.consResults[io.circe.Decoder.Result, Symbol @@ String("power"), Option[Int], shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]($anon.this.circeGenericDecoderFortoughness.tryDecode(c.downField("power")), ReprDecoder.consResults[io.circe.Decoder.Result, Symbol @@ String("toughness"), Option[Int], shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]($anon.this.circeGenericDecoderFortoughness.tryDecode(c.downField("toughness")), ReprDecoder.hnilResult)(io.circe.Decoder.resultInstance))(io.circe.Decoder.resultInstance))(io.circe.Decoder.resultInstance))(io.circe.Decoder.resultInstance))(io.circe.Decoder.resultInstance))(io.circe.Decoder.resultInstance))(io.circe.Decoder.resultInstance))(io.circe.Decoder.resultInstance);
+    final override def decodeAccumulating(c: io.circe.HCursor): io.circe.Decoder.AccumulatingResult[shapeless.labelled.FieldType[Symbol @@ String("name"),String] :: shapeless.labelled.FieldType[Symbol @@ String("type"),String] :: shapeless.labelled.FieldType[Symbol @@ String("mana_cost"),String] :: shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out] = ReprDecoder.consResults[io.circe.Decoder.AccumulatingResult, Symbol @@ String("name"), String, shapeless.labelled.FieldType[Symbol @@ String("type"),String] :: shapeless.labelled.FieldType[Symbol @@ String("mana_cost"),String] :: shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]($anon.this.circeGenericDecoderFortext.tryDecodeAccumulating(c.downField("name")), ReprDecoder.consResults[io.circe.Decoder.AccumulatingResult, Symbol @@ String("type"), String, shapeless.labelled.FieldType[Symbol @@ String("mana_cost"),String] :: shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]($anon.this.circeGenericDecoderFortext.tryDecodeAccumulating(c.downField("type")), ReprDecoder.consResults[io.circe.Decoder.AccumulatingResult, Symbol @@ String("mana_cost"), String, shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]($anon.this.circeGenericDecoderFortext.tryDecodeAccumulating(c.downField("mana_cost")), ReprDecoder.consResults[io.circe.Decoder.AccumulatingResult, Symbol @@ String("rarity"), String, shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]($anon.this.circeGenericDecoderFortext.tryDecodeAccumulating(c.downField("rarity")), ReprDecoder.consResults[io.circe.Decoder.AccumulatingResult, Symbol @@ String("set"), String, shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]($anon.this.circeGenericDecoderFortext.tryDecodeAccumulating(c.downField("set")), ReprDecoder.consResults[io.circe.Decoder.AccumulatingResult, Symbol @@ String("text"), String, shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]($anon.this.circeGenericDecoderFortext.tryDecodeAccumulating(c.downField("text")), ReprDecoder.consResults[io.circe.Decoder.AccumulatingResult, Symbol @@ String("power"), Option[Int], shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]($anon.this.circeGenericDecoderFortoughness.tryDecodeAccumulating(c.downField("power")), ReprDecoder.consResults[io.circe.Decoder.AccumulatingResult, Symbol @@ String("toughness"), Option[Int], shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]($anon.this.circeGenericDecoderFortoughness.tryDecodeAccumulating(c.downField("toughness")), ReprDecoder.hnilResultAccumulating)(io.circe.Decoder.accumulatingResultInstance))(io.circe.Decoder.accumulatingResultInstance))(io.circe.Decoder.accumulatingResultInstance))(io.circe.Decoder.accumulatingResultInstance))(io.circe.Decoder.accumulatingResultInstance))(io.circe.Decoder.accumulatingResultInstance))(io.circe.Decoder.accumulatingResultInstance))(io.circe.Decoder.accumulatingResultInstance)
+  };
+  new $anon()
+}: io.circe.generic.decoding.ReprDecoder[shapeless.labelled.FieldType[Symbol @@ String("name"),String] :: shapeless.labelled.FieldType[Symbol @@ String("type"),String] :: shapeless.labelled.FieldType[Symbol @@ String("mana_cost"),String] :: shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]).asInstanceOf[io.circe.generic.decoding.ReprDecoder[shapeless.labelled.FieldType[Symbol @@ String("name"),String] :: shapeless.labelled.FieldType[Symbol @@ String("type"),String] :: shapeless.labelled.FieldType[Symbol @@ String("mana_cost"),String] :: shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]]
+    };
+    new anon$importedDecoder$macro$19().inst$macro$1
+  };
+  shapeless.Lazy.apply[io.circe.generic.decoding.DerivedDecoder[mtg.cards.Card]](inst$macro$20)
+}): io.circe.Decoder[mtg.cards.Card])): io.circe.export.Exported[io.circe.Decoder[mtg.cards.Card]])))
+
+19
+C:\Users\manue\Desktop\MTG-Simulator\src\main\scala\mtg\cards\CardLoader.scala
+mtg.cards
+CardLoader
+Object
+mtg.cards.CardLoader
+loadCards
+629
+659
+18
+io.circe.Parser.decode
+ApplyToImplicitArgs
+false
+0
+false
+io.circe.parser.`package`.decode[List[mtg.cards.Card]](jsonString)(circe.this.Decoder.decodeList[mtg.cards.Card](circe.this.Decoder.importedDecoder[mtg.cards.Card]((new io.circe.export.Exported[io.circe.Decoder[mtg.cards.Card]]((shapeless.lazily.apply[io.circe.generic.decoding.DerivedDecoder[mtg.cards.Card]]({
+  val inst$macro$20: io.circe.generic.decoding.DerivedDecoder[mtg.cards.Card] = {
+    final class anon$importedDecoder$macro$19 extends AnyRef with Serializable {
+      def <init>(): anon$importedDecoder$macro$19 = {
+        anon$importedDecoder$macro$19.super.<init>();
+        ()
+      };
+      <stable> <accessor> lazy val inst$macro$1: io.circe.generic.decoding.DerivedDecoder[mtg.cards.Card] = decoding.this.DerivedDecoder.deriveDecoder[mtg.cards.Card, shapeless.labelled.FieldType[Symbol @@ String("name"),String] :: shapeless.labelled.FieldType[Symbol @@ String("type"),String] :: shapeless.labelled.FieldType[Symbol @@ String("mana_cost"),String] :: shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out](shapeless.this.LabelledGeneric.materializeProduct[mtg.cards.Card, (Symbol @@ String("name")) :: (Symbol @@ String("type")) :: (Symbol @@ String("mana_cost")) :: (Symbol @@ String("rarity")) :: (Symbol @@ String("set")) :: (Symbol @@ String("text")) :: (Symbol @@ String("power")) :: (Symbol @@ String("toughness")) :: shapeless.HNil, String :: String :: String :: String :: String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil, shapeless.labelled.FieldType[Symbol @@ String("name"),String] :: shapeless.labelled.FieldType[Symbol @@ String("type"),String] :: shapeless.labelled.FieldType[Symbol @@ String("mana_cost"),String] :: shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out](DefaultSymbolicLabelling.instance[mtg.cards.Card, (Symbol @@ String("name")) :: (Symbol @@ String("type")) :: (Symbol @@ String("mana_cost")) :: (Symbol @@ String("rarity")) :: (Symbol @@ String("set")) :: (Symbol @@ String("text")) :: (Symbol @@ String("power")) :: (Symbol @@ String("toughness")) :: shapeless.HNil](shapeless.::.apply[Symbol @@ String("name"), (Symbol @@ String("type")) :: (Symbol @@ String("mana_cost")) :: (Symbol @@ String("rarity")) :: (Symbol @@ String("set")) :: (Symbol @@ String("text")) :: (Symbol @@ String("power")) :: (Symbol @@ String("toughness")) :: shapeless.HNil.type](scala.Symbol.apply("name").asInstanceOf[Symbol @@ String("name")], shapeless.::.apply[Symbol @@ String("type"), (Symbol @@ String("mana_cost")) :: (Symbol @@ String("rarity")) :: (Symbol @@ String("set")) :: (Symbol @@ String("text")) :: (Symbol @@ String("power")) :: (Symbol @@ String("toughness")) :: shapeless.HNil.type](scala.Symbol.apply("type").asInstanceOf[Symbol @@ String("type")], shapeless.::.apply[Symbol @@ String("mana_cost"), (Symbol @@ String("rarity")) :: (Symbol @@ String("set")) :: (Symbol @@ String("text")) :: (Symbol @@ String("power")) :: (Symbol @@ String("toughness")) :: shapeless.HNil.type](scala.Symbol.apply("mana_cost").asInstanceOf[Symbol @@ String("mana_cost")], shapeless.::.apply[Symbol @@ String("rarity"), (Symbol @@ String("set")) :: (Symbol @@ String("text")) :: (Symbol @@ String("power")) :: (Symbol @@ String("toughness")) :: shapeless.HNil.type](scala.Symbol.apply("rarity").asInstanceOf[Symbol @@ String("rarity")], shapeless.::.apply[Symbol @@ String("set"), (Symbol @@ String("text")) :: (Symbol @@ String("power")) :: (Symbol @@ String("toughness")) :: shapeless.HNil.type](scala.Symbol.apply("set").asInstanceOf[Symbol @@ String("set")], shapeless.::.apply[Symbol @@ String("text"), (Symbol @@ String("power")) :: (Symbol @@ String("toughness")) :: shapeless.HNil.type](scala.Symbol.apply("text").asInstanceOf[Symbol @@ String("text")], shapeless.::.apply[Symbol @@ String("power"), (Symbol @@ String("toughness")) :: shapeless.HNil.type](scala.Symbol.apply("power").asInstanceOf[Symbol @@ String("power")], shapeless.::.apply[Symbol @@ String("toughness"), shapeless.HNil.type](scala.Symbol.apply("toughness").asInstanceOf[Symbol @@ String("toughness")], shapeless.HNil))))))))), Generic.instance[mtg.cards.Card, String :: String :: String :: String :: String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil](((x0$3: mtg.cards.Card) => x0$3 match {
+  case (name: String, type: String, mana_cost: String, rarity: String, set: String, text: String, power: Option[Int], toughness: Option[Int]): mtg.cards.Card((pat$macro$10 @ _), (pat$macro$11 @ _), (pat$macro$12 @ _), (pat$macro$13 @ _), (pat$macro$14 @ _), (pat$macro$15 @ _), (pat$macro$16 @ _), (pat$macro$17 @ _)) => shapeless.::.apply[String, String :: String :: String :: String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil.type](pat$macro$10, shapeless.::.apply[String, String :: String :: String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil.type](pat$macro$11, shapeless.::.apply[String, String :: String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil.type](pat$macro$12, shapeless.::.apply[String, String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil.type](pat$macro$13, shapeless.::.apply[String, String :: Option[Int] :: Option[Int] :: shapeless.HNil.type](pat$macro$14, shapeless.::.apply[String, Option[Int] :: Option[Int] :: shapeless.HNil.type](pat$macro$15, shapeless.::.apply[Option[Int], Option[Int] :: shapeless.HNil.type](pat$macro$16, shapeless.::.apply[Option[Int], shapeless.HNil.type](pat$macro$17, shapeless.HNil)))))))).asInstanceOf[String :: String :: String :: String :: String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil]
+}), ((x0$4: String :: String :: String :: String :: String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil) => x0$4 match {
+  case (head: String, tail: String :: String :: String :: String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil): String :: String :: String :: String :: String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil((pat$macro$10 @ _), (head: String, tail: String :: String :: String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil): String :: String :: String :: String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil((pat$macro$11 @ _), (head: String, tail: String :: String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil): String :: String :: String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil((pat$macro$12 @ _), (head: String, tail: String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil): String :: String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil((pat$macro$13 @ _), (head: String, tail: String :: Option[Int] :: Option[Int] :: shapeless.HNil): String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil((pat$macro$14 @ _), (head: String, tail: Option[Int] :: Option[Int] :: shapeless.HNil): String :: Option[Int] :: Option[Int] :: shapeless.HNil((pat$macro$15 @ _), (head: Option[Int], tail: Option[Int] :: shapeless.HNil): Option[Int] :: Option[Int] :: shapeless.HNil((pat$macro$16 @ _), (head: Option[Int], tail: shapeless.HNil): Option[Int] :: shapeless.HNil((pat$macro$17 @ _), shapeless.HNil)))))))) => cards.this.Card.apply(pat$macro$10, pat$macro$11, pat$macro$12, pat$macro$13, pat$macro$14, pat$macro$15, pat$macro$16, pat$macro$17).asInstanceOf[mtg.cards.Card]
+})), hlist.this.ZipWithKeys.hconsZipWithKeys[Symbol @@ String("name"), String, (Symbol @@ String("type")) :: (Symbol @@ String("mana_cost")) :: (Symbol @@ String("rarity")) :: (Symbol @@ String("set")) :: (Symbol @@ String("text")) :: (Symbol @@ String("power")) :: (Symbol @@ String("toughness")) :: shapeless.HNil, String :: String :: String :: String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil, shapeless.labelled.FieldType[Symbol @@ String("type"),String] :: shapeless.labelled.FieldType[Symbol @@ String("mana_cost"),String] :: shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out](hlist.this.ZipWithKeys.hconsZipWithKeys[Symbol @@ String("type"), String, (Symbol @@ String("mana_cost")) :: (Symbol @@ String("rarity")) :: (Symbol @@ String("set")) :: (Symbol @@ String("text")) :: (Symbol @@ String("power")) :: (Symbol @@ String("toughness")) :: shapeless.HNil, String :: String :: String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil, shapeless.labelled.FieldType[Symbol @@ String("mana_cost"),String] :: shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out](hlist.this.ZipWithKeys.hconsZipWithKeys[Symbol @@ String("mana_cost"), String, (Symbol @@ String("rarity")) :: (Symbol @@ String("set")) :: (Symbol @@ String("text")) :: (Symbol @@ String("power")) :: (Symbol @@ String("toughness")) :: shapeless.HNil, String :: String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil, shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out](hlist.this.ZipWithKeys.hconsZipWithKeys[Symbol @@ String("rarity"), String, (Symbol @@ String("set")) :: (Symbol @@ String("text")) :: (Symbol @@ String("power")) :: (Symbol @@ String("toughness")) :: shapeless.HNil, String :: String :: Option[Int] :: Option[Int] :: shapeless.HNil, shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out](hlist.this.ZipWithKeys.hconsZipWithKeys[Symbol @@ String("set"), String, (Symbol @@ String("text")) :: (Symbol @@ String("power")) :: (Symbol @@ String("toughness")) :: shapeless.HNil, String :: Option[Int] :: Option[Int] :: shapeless.HNil, shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out](hlist.this.ZipWithKeys.hconsZipWithKeys[Symbol @@ String("text"), String, (Symbol @@ String("power")) :: (Symbol @@ String("toughness")) :: shapeless.HNil, Option[Int] :: Option[Int] :: shapeless.HNil, shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out](hlist.this.ZipWithKeys.hconsZipWithKeys[Symbol @@ String("power"), Option[Int], (Symbol @@ String("toughness")) :: shapeless.HNil, Option[Int] :: shapeless.HNil, shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out](hlist.this.ZipWithKeys.hconsZipWithKeys[Symbol @@ String("toughness"), Option[Int], shapeless.HNil, shapeless.HNil, shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out](hlist.this.ZipWithKeys.hnilZipWithKeys, Witness.mkWitness[Symbol with shapeless.tag.Tagged[String("toughness")]](scala.Symbol.apply("toughness").asInstanceOf[Symbol @@ String("toughness")].asInstanceOf[Symbol with shapeless.tag.Tagged[String("toughness")]])), Witness.mkWitness[Symbol with shapeless.tag.Tagged[String("power")]](scala.Symbol.apply("power").asInstanceOf[Symbol @@ String("power")].asInstanceOf[Symbol with shapeless.tag.Tagged[String("power")]])), Witness.mkWitness[Symbol with shapeless.tag.Tagged[String("text")]](scala.Symbol.apply("text").asInstanceOf[Symbol @@ String("text")].asInstanceOf[Symbol with shapeless.tag.Tagged[String("text")]])), Witness.mkWitness[Symbol with shapeless.tag.Tagged[String("set")]](scala.Symbol.apply("set").asInstanceOf[Symbol @@ String("set")].asInstanceOf[Symbol with shapeless.tag.Tagged[String("set")]])), Witness.mkWitness[Symbol with shapeless.tag.Tagged[String("rarity")]](scala.Symbol.apply("rarity").asInstanceOf[Symbol @@ String("rarity")].asInstanceOf[Symbol with shapeless.tag.Tagged[String("rarity")]])), Witness.mkWitness[Symbol with shapeless.tag.Tagged[String("mana_cost")]](scala.Symbol.apply("mana_cost").asInstanceOf[Symbol @@ String("mana_cost")].asInstanceOf[Symbol with shapeless.tag.Tagged[String("mana_cost")]])), Witness.mkWitness[Symbol with shapeless.tag.Tagged[String("type")]](scala.Symbol.apply("type").asInstanceOf[Symbol @@ String("type")].asInstanceOf[Symbol with shapeless.tag.Tagged[String("type")]])), Witness.mkWitness[Symbol with shapeless.tag.Tagged[String("name")]](scala.Symbol.apply("name").asInstanceOf[Symbol @@ String("name")].asInstanceOf[Symbol with shapeless.tag.Tagged[String("name")]])), scala.this.<:<.refl[shapeless.labelled.FieldType[Symbol @@ String("name"),String] :: shapeless.labelled.FieldType[Symbol @@ String("type"),String] :: shapeless.labelled.FieldType[Symbol @@ String("mana_cost"),String] :: shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]), shapeless.Lazy.apply[io.circe.generic.decoding.ReprDecoder[shapeless.labelled.FieldType[Symbol @@ String("name"),String] :: shapeless.labelled.FieldType[Symbol @@ String("type"),String] :: shapeless.labelled.FieldType[Symbol @@ String("mana_cost"),String] :: shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]](anon$importedDecoder$macro$19.this.inst$macro$18)).asInstanceOf[io.circe.generic.decoding.DerivedDecoder[mtg.cards.Card]];
+      <stable> <accessor> lazy val inst$macro$18: io.circe.generic.decoding.ReprDecoder[shapeless.labelled.FieldType[Symbol @@ String("name"),String] :: shapeless.labelled.FieldType[Symbol @@ String("type"),String] :: shapeless.labelled.FieldType[Symbol @@ String("mana_cost"),String] :: shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out] = ({
+  final class $anon extends io.circe.generic.decoding.ReprDecoder[shapeless.labelled.FieldType[Symbol @@ String("name"),String] :: shapeless.labelled.FieldType[Symbol @@ String("type"),String] :: shapeless.labelled.FieldType[Symbol @@ String("mana_cost"),String] :: shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out] {
+    def <init>(): <$anon: io.circe.generic.decoding.ReprDecoder[shapeless.labelled.FieldType[Symbol @@ String("name"),String] :: shapeless.labelled.FieldType[Symbol @@ String("type"),String] :: shapeless.labelled.FieldType[Symbol @@ String("mana_cost"),String] :: shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]> = {
+      $anon.super.<init>();
+      ()
+    };
+    private[this] val circeGenericDecoderFortext: io.circe.Decoder[String] = circe.this.Decoder.decodeString;
+    private[this] val circeGenericDecoderFortoughness: io.circe.Decoder[Option[Int]] = circe.this.Decoder.decodeOption[Int](circe.this.Decoder.decodeInt);
+    final def apply(c: io.circe.HCursor): io.circe.Decoder.Result[shapeless.labelled.FieldType[Symbol @@ String("name"),String] :: shapeless.labelled.FieldType[Symbol @@ String("type"),String] :: shapeless.labelled.FieldType[Symbol @@ String("mana_cost"),String] :: shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out] = ReprDecoder.consResults[io.circe.Decoder.Result, Symbol @@ String("name"), String, shapeless.labelled.FieldType[Symbol @@ String("type"),String] :: shapeless.labelled.FieldType[Symbol @@ String("mana_cost"),String] :: shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]($anon.this.circeGenericDecoderFortext.tryDecode(c.downField("name")), ReprDecoder.consResults[io.circe.Decoder.Result, Symbol @@ String("type"), String, shapeless.labelled.FieldType[Symbol @@ String("mana_cost"),String] :: shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]($anon.this.circeGenericDecoderFortext.tryDecode(c.downField("type")), ReprDecoder.consResults[io.circe.Decoder.Result, Symbol @@ String("mana_cost"), String, shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]($anon.this.circeGenericDecoderFortext.tryDecode(c.downField("mana_cost")), ReprDecoder.consResults[io.circe.Decoder.Result, Symbol @@ String("rarity"), String, shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]($anon.this.circeGenericDecoderFortext.tryDecode(c.downField("rarity")), ReprDecoder.consResults[io.circe.Decoder.Result, Symbol @@ String("set"), String, shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]($anon.this.circeGenericDecoderFortext.tryDecode(c.downField("set")), ReprDecoder.consResults[io.circe.Decoder.Result, Symbol @@ String("text"), String, shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]($anon.this.circeGenericDecoderFortext.tryDecode(c.downField("text")), ReprDecoder.consResults[io.circe.Decoder.Result, Symbol @@ String("power"), Option[Int], shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]($anon.this.circeGenericDecoderFortoughness.tryDecode(c.downField("power")), ReprDecoder.consResults[io.circe.Decoder.Result, Symbol @@ String("toughness"), Option[Int], shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]($anon.this.circeGenericDecoderFortoughness.tryDecode(c.downField("toughness")), ReprDecoder.hnilResult)(io.circe.Decoder.resultInstance))(io.circe.Decoder.resultInstance))(io.circe.Decoder.resultInstance))(io.circe.Decoder.resultInstance))(io.circe.Decoder.resultInstance))(io.circe.Decoder.resultInstance))(io.circe.Decoder.resultInstance))(io.circe.Decoder.resultInstance);
+    final override def decodeAccumulating(c: io.circe.HCursor): io.circe.Decoder.AccumulatingResult[shapeless.labelled.FieldType[Symbol @@ String("name"),String] :: shapeless.labelled.FieldType[Symbol @@ String("type"),String] :: shapeless.labelled.FieldType[Symbol @@ String("mana_cost"),String] :: shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out] = ReprDecoder.consResults[io.circe.Decoder.AccumulatingResult, Symbol @@ String("name"), String, shapeless.labelled.FieldType[Symbol @@ String("type"),String] :: shapeless.labelled.FieldType[Symbol @@ String("mana_cost"),String] :: shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]($anon.this.circeGenericDecoderFortext.tryDecodeAccumulating(c.downField("name")), ReprDecoder.consResults[io.circe.Decoder.AccumulatingResult, Symbol @@ String("type"), String, shapeless.labelled.FieldType[Symbol @@ String("mana_cost"),String] :: shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]($anon.this.circeGenericDecoderFortext.tryDecodeAccumulating(c.downField("type")), ReprDecoder.consResults[io.circe.Decoder.AccumulatingResult, Symbol @@ String("mana_cost"), String, shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]($anon.this.circeGenericDecoderFortext.tryDecodeAccumulating(c.downField("mana_cost")), ReprDecoder.consResults[io.circe.Decoder.AccumulatingResult, Symbol @@ String("rarity"), String, shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]($anon.this.circeGenericDecoderFortext.tryDecodeAccumulating(c.downField("rarity")), ReprDecoder.consResults[io.circe.Decoder.AccumulatingResult, Symbol @@ String("set"), String, shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]($anon.this.circeGenericDecoderFortext.tryDecodeAccumulating(c.downField("set")), ReprDecoder.consResults[io.circe.Decoder.AccumulatingResult, Symbol @@ String("text"), String, shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]($anon.this.circeGenericDecoderFortext.tryDecodeAccumulating(c.downField("text")), ReprDecoder.consResults[io.circe.Decoder.AccumulatingResult, Symbol @@ String("power"), Option[Int], shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]($anon.this.circeGenericDecoderFortoughness.tryDecodeAccumulating(c.downField("power")), ReprDecoder.consResults[io.circe.Decoder.AccumulatingResult, Symbol @@ String("toughness"), Option[Int], shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]($anon.this.circeGenericDecoderFortoughness.tryDecodeAccumulating(c.downField("toughness")), ReprDecoder.hnilResultAccumulating)(io.circe.Decoder.accumulatingResultInstance))(io.circe.Decoder.accumulatingResultInstance))(io.circe.Decoder.accumulatingResultInstance))(io.circe.Decoder.accumulatingResultInstance))(io.circe.Decoder.accumulatingResultInstance))(io.circe.Decoder.accumulatingResultInstance))(io.circe.Decoder.accumulatingResultInstance))(io.circe.Decoder.accumulatingResultInstance)
+  };
+  new $anon()
+}: io.circe.generic.decoding.ReprDecoder[shapeless.labelled.FieldType[Symbol @@ String("name"),String] :: shapeless.labelled.FieldType[Symbol @@ String("type"),String] :: shapeless.labelled.FieldType[Symbol @@ String("mana_cost"),String] :: shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]).asInstanceOf[io.circe.generic.decoding.ReprDecoder[shapeless.labelled.FieldType[Symbol @@ String("name"),String] :: shapeless.labelled.FieldType[Symbol @@ String("type"),String] :: shapeless.labelled.FieldType[Symbol @@ String("mana_cost"),String] :: shapeless.labelled.FieldType[Symbol @@ String("rarity"),String] :: shapeless.labelled.FieldType[Symbol @@ String("set"),String] :: shapeless.labelled.FieldType[Symbol @@ String("text"),String] :: shapeless.labelled.FieldType[Symbol @@ String("power"),Option[Int]] :: shapeless.labelled.FieldType[Symbol @@ String("toughness"),Option[Int]] :: shapeless.ops.hlist.ZipWithKeys.hnilZipWithKeys.Out]]
+    };
+    new anon$importedDecoder$macro$19().inst$macro$1
+  };
+  shapeless.Lazy.apply[io.circe.generic.decoding.DerivedDecoder[mtg.cards.Card]](inst$macro$20)
+}): io.circe.Decoder[mtg.cards.Card])): io.circe.export.Exported[io.circe.Decoder[mtg.cards.Card]]))))
+
+20
+C:\Users\manue\Desktop\MTG-Simulator\src\main\scala\mtg\cards\CardLoader.scala
+mtg.cards
+CardLoader
+Object
+mtg.cards.CardLoader
+loadCards
+736
+803
+20
+scala.Predef.println
+Apply
+false
+0
+false
+scala.Predef.println(("Successfully loaded ".+(cards.size).+(" cards from ").+(filePath).+("."): String))
+
+21
+C:\Users\manue\Desktop\MTG-Simulator\src\main\scala\mtg\cards\CardLoader.scala
+mtg.cards
+CardLoader
+Object
+mtg.cards.CardLoader
+loadCards
+901
+957
+23
+scala.Predef.println
+Apply
+false
+0
+false
+scala.Predef.println(("Failed to decode JSON from ".+(filePath).+(": ").+(error): String))
+
+22
+C:\Users\manue\Desktop\MTG-Simulator\src\main\scala\mtg\cards\CardLoader.scala
+mtg.cards
+CardLoader
+Object
+mtg.cards.CardLoader
+loadCards
+983
+993
+24
+scala.collection.immutable.List.empty
+TypeApply
+false
+0
+false
+scala.`package`.List.empty[Nothing]
+
+23
+C:\Users\manue\Desktop\MTG-Simulator\src\main\scala\mtg\cards\CardLoader.scala
+mtg.cards
+CardLoader
+Object
+mtg.cards.CardLoader
+loadCards
+1081
+1150
+27
+scala.Predef.println
+Apply
+false
+0
+false
+scala.Predef.println(("Failed to read file at ".+(filePath).+(": ").+(exception.getMessage()): String))
+
+24
+C:\Users\manue\Desktop\MTG-Simulator\src\main\scala\mtg\cards\CardLoader.scala
+mtg.cards
+CardLoader
+Object
+mtg.cards.CardLoader
+loadCards
+1168
+1178
+28
+scala.collection.immutable.List.empty
+TypeApply
+false
+0
+false
+scala.`package`.List.empty[Nothing]
+

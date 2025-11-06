@@ -1,0 +1,327 @@
+<html>
+      <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title id="title">
+          main.scala.html
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/css/theme.default.min.css" type="text/css"/><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/js/jquery.tablesorter.min.js"></script><link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" type="text/css"/><script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script><script type="text/javascript">
+        $(document).ready(function() {$(".tablesorter").tablesorter();});
+      </script>
+        <style>
+          table.codegrid { font-family: monospace; font-size: 12px; width: auto!important; }table.statementlist { width: auto!important; font-size: 13px; } table.codegrid td { padding: 0!important; border: 0!important } table td.linenumber { width: 40px!important; } 
+        </style>
+      </head>
+      <body style="font-family: monospace;">
+        <ul class="nav nav-tabs">
+          <li>
+            <a href="#codegrid" data-toggle="tab">Codegrid</a>
+          </li>
+          <li>
+            <a href="#statementlist" data-toggle="tab">Statement List</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="codegrid">
+            <pre style='font-size: 12pt; font-family: courier, monospace;'>1 <span style=''>package mtg
+</span>2 <span style=''>
+</span>3 <span style=''>import mtg.cards.CardLoader
+</span>4 <span style=''>
+</span>5 <span style=''>object Main extends App {
+</span>6 <span style=''>    </span><span style='background: #F0ADAD'>println(&quot;Starting MTG Alpha Simulator Load Test...&quot;)</span><span style=''>
+</span>7 <span style=''>    
+</span>8 <span style=''>    val alphaCards = </span><span style='background: #F0ADAD'>CardLoader.loadCards()</span><span style=''>
+</span>9 <span style=''>
+</span>10 <span style=''>    if (</span><span style='background: #F0ADAD'>alphaCards.nonEmpty</span><span style=''>) </span><span style='background: #F0ADAD'>{
+</span>11 <span style=''></span><span style='background: #F0ADAD'>        println(s&quot;\nLoad successful. Loaded ${alphaCards.size} cards.&quot;)
+</span>12 <span style=''></span><span style='background: #F0ADAD'>        println(&quot;First Card Details:&quot;)
+</span>13 <span style=''></span><span style='background: #F0ADAD'>        println(alphaCards.head)
+</span>14 <span style=''></span><span style='background: #F0ADAD'>    }</span><span style=''> else {
+</span>15 <span style=''>        </span><span style='background: #F0ADAD'>println(&quot;\nLoad failed. No cards were loaded.&quot;)</span><span style=''>
+</span>16 <span style=''>    }
+</span>17 <span style=''>}
+</span></pre>
+          </div>
+          <div class="tab-pane" id="statementlist">
+            <table cellspacing="0" cellpadding="0" class="table statementlist">
+      <tr>
+        <th>Line</th>
+        <th>Stmt Id</th>
+        <th>Pos</th>
+        <th>Tree</th>
+        <th>Symbol</th>
+        <th>Tests</th>
+        <th>Code</th>
+      </tr><tr>
+        <td>
+          6
+        </td>
+        <td>
+          1
+        </td>
+        <td>
+          77
+          -
+          129
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Predef.println
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #F0ADAD">
+          scala.Predef.println(&quot;Starting MTG Alpha Simulator Load Test...&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          8
+        </td>
+        <td>
+          2
+        </td>
+        <td>
+          169
+          -
+          169
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          mtg.cards.CardLoader.loadCards$default$1
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #F0ADAD">
+          mtg.cards.CardLoader.loadCards$default$1
+        </td>
+      </tr><tr>
+        <td>
+          8
+        </td>
+        <td>
+          3
+        </td>
+        <td>
+          158
+          -
+          180
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          mtg.cards.CardLoader.loadCards
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #F0ADAD">
+          mtg.cards.CardLoader.loadCards(mtg.cards.CardLoader.loadCards$default$1)
+        </td>
+      </tr><tr>
+        <td>
+          10
+        </td>
+        <td>
+          4
+        </td>
+        <td>
+          192
+          -
+          211
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.collection.IterableOnceOps.nonEmpty
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #F0ADAD">
+          Main.this.alphaCards.nonEmpty
+        </td>
+      </tr><tr>
+        <td>
+          10
+        </td>
+        <td>
+          9
+        </td>
+        <td>
+          213
+          -
+          368
+        </td>
+        <td>
+          Block
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #F0ADAD">
+          {
+  scala.Predef.println((&quot;\nLoad successful. Loaded &quot;.+(Main.this.alphaCards.size).+(&quot; cards.&quot;): String));
+  scala.Predef.println(&quot;First Card Details:&quot;);
+  scala.Predef.println(Main.this.alphaCards.head)
+}
+        </td>
+      </tr><tr>
+        <td>
+          11
+        </td>
+        <td>
+          5
+        </td>
+        <td>
+          224
+          -
+          287
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Predef.println
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #F0ADAD">
+          scala.Predef.println((&quot;\nLoad successful. Loaded &quot;.+(Main.this.alphaCards.size).+(&quot; cards.&quot;): String))
+        </td>
+      </tr><tr>
+        <td>
+          12
+        </td>
+        <td>
+          6
+        </td>
+        <td>
+          297
+          -
+          327
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Predef.println
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #F0ADAD">
+          scala.Predef.println(&quot;First Card Details:&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          13
+        </td>
+        <td>
+          8
+        </td>
+        <td>
+          337
+          -
+          361
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Predef.println
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #F0ADAD">
+          scala.Predef.println(Main.this.alphaCards.head)
+        </td>
+      </tr><tr>
+        <td>
+          13
+        </td>
+        <td>
+          7
+        </td>
+        <td>
+          345
+          -
+          360
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.collection.IterableOps.head
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #F0ADAD">
+          Main.this.alphaCards.head
+        </td>
+      </tr><tr>
+        <td>
+          15
+        </td>
+        <td>
+          11
+        </td>
+        <td>
+          385
+          -
+          432
+        </td>
+        <td>
+          Block
+        </td>
+        <td>
+          scala.Predef.println
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #F0ADAD">
+          scala.Predef.println(&quot;\nLoad failed. No cards were loaded.&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          15
+        </td>
+        <td>
+          10
+        </td>
+        <td>
+          385
+          -
+          432
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Predef.println
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #F0ADAD">
+          scala.Predef.println(&quot;\nLoad failed. No cards were loaded.&quot;)
+        </td>
+      </tr>
+    </table>
+          </div>
+        </div>
+      </body>
+    </html>

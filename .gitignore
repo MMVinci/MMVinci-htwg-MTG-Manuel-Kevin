@@ -1,0 +1,12 @@
+# Metals & VS Code
+.metals/
+.bloop/
+.bsp/
+.scala-build/
+.vscode/
+
+# macOS system files
+.DS_Store
+
+# Logs
+*.log
