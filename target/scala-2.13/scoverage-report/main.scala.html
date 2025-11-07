@@ -22,23 +22,28 @@
         </ul>
         <div class="tab-content">
           <div class="tab-pane active" id="codegrid">
-            <pre style='font-size: 12pt; font-family: courier, monospace;'>1 <span style=''>package mtg
+            <pre style='font-size: 12pt; font-family: courier, monospace;'>1 <span style=''>import mtg.cards.CardLoader
 </span>2 <span style=''>
-</span>3 <span style=''>import mtg.cards.CardLoader
-</span>4 <span style=''>
-</span>5 <span style=''>object Main extends App {
-</span>6 <span style=''>    </span><span style='background: #F0ADAD'>println(&quot;Starting MTG Alpha Simulator Load Test...&quot;)</span><span style=''>
-</span>7 <span style=''>    
-</span>8 <span style=''>    val alphaCards = </span><span style='background: #F0ADAD'>CardLoader.loadCards()</span><span style=''>
-</span>9 <span style=''>
-</span>10 <span style=''>    if (</span><span style='background: #F0ADAD'>alphaCards.nonEmpty</span><span style=''>) </span><span style='background: #F0ADAD'>{
-</span>11 <span style=''></span><span style='background: #F0ADAD'>        println(s&quot;\nLoad successful. Loaded ${alphaCards.size} cards.&quot;)
-</span>12 <span style=''></span><span style='background: #F0ADAD'>        println(&quot;First Card Details:&quot;)
-</span>13 <span style=''></span><span style='background: #F0ADAD'>        println(alphaCards.head)
-</span>14 <span style=''></span><span style='background: #F0ADAD'>    }</span><span style=''> else {
-</span>15 <span style=''>        </span><span style='background: #F0ADAD'>println(&quot;\nLoad failed. No cards were loaded.&quot;)</span><span style=''>
-</span>16 <span style=''>    }
-</span>17 <span style=''>}
+</span>3 <span style=''>object Main extends App {
+</span>4 <span style=''>  </span><span style='background: #F0ADAD'>println(&quot;=== Magic the Gathering Card Loader ===&quot;)</span><span style=''>
+</span>5 <span style=''>
+</span>6 <span style=''>  // Karten laden (Standarddatei)
+</span>7 <span style=''>  val cards = </span><span style='background: #F0ADAD'>CardLoader.loadCards()</span><span style=''>
+</span>8 <span style=''>
+</span>9 <span style=''>  </span><span style='background: #F0ADAD'>println(s&quot;Successfully loaded ${cards.size} cards!\n&quot;)</span><span style=''>
+</span>10 <span style=''>
+</span>11 <span style=''>  // Karten anzeigen
+</span>12 <span style=''>  </span><span style='background: #F0ADAD'>cards.foreach { card =&gt;
+</span>13 <span style=''></span><span style='background: #F0ADAD'>    println(s&quot;Name: ${card.name}&quot;)
+</span>14 <span style=''></span><span style='background: #F0ADAD'>    println(s&quot;Type: ${card.`type`}&quot;)
+</span>15 <span style=''></span><span style='background: #F0ADAD'>    println(s&quot;Mana Cost: ${card.mana_cost}&quot;)
+</span>16 <span style=''></span><span style='background: #F0ADAD'>    println(s&quot;Rarity: ${card.rarity}&quot;)
+</span>17 <span style=''></span><span style='background: #F0ADAD'>    println(s&quot;Set: ${card.set}&quot;)
+</span>18 <span style=''></span><span style='background: #F0ADAD'>    println(s&quot;Power: ${card.power.getOrElse(&quot;-&quot;)}&quot;)
+</span>19 <span style=''></span><span style='background: #F0ADAD'>    println(s&quot;Toughness: ${card.toughness.getOrElse(&quot;-&quot;)}&quot;)
+</span>20 <span style=''></span><span style='background: #F0ADAD'>    println(&quot;-&quot; * 40)
+</span>21 <span style=''></span><span style='background: #F0ADAD'>  }</span><span style=''>
+</span>22 <span style=''>}
 </span></pre>
           </div>
           <div class="tab-pane" id="statementlist">
@@ -53,15 +58,15 @@
         <th>Code</th>
       </tr><tr>
         <td>
-          6
+          4
         </td>
         <td>
           1
         </td>
         <td>
-          77
+          60
           -
-          129
+          110
         </td>
         <td>
           Apply
@@ -73,19 +78,19 @@
           
         </td>
         <td style="background: #F0ADAD">
-          scala.Predef.println(&quot;Starting MTG Alpha Simulator Load Test...&quot;)
+          scala.Predef.println(&quot;=== Magic the Gathering Card Loader ===&quot;)
         </td>
       </tr><tr>
         <td>
-          8
+          7
         </td>
         <td>
           2
         </td>
         <td>
-          169
+          174
           -
-          169
+          174
         </td>
         <td>
           Select
@@ -101,15 +106,15 @@
         </td>
       </tr><tr>
         <td>
-          8
+          7
         </td>
         <td>
           3
         </td>
         <td>
-          158
+          163
           -
-          180
+          185
         </td>
         <td>
           Apply
@@ -125,67 +130,15 @@
         </td>
       </tr><tr>
         <td>
-          10
+          9
         </td>
         <td>
           4
         </td>
         <td>
-          192
+          191
           -
-          211
-        </td>
-        <td>
-          Select
-        </td>
-        <td>
-          scala.collection.IterableOnceOps.nonEmpty
-        </td>
-        <td>
-          
-        </td>
-        <td style="background: #F0ADAD">
-          Main.this.alphaCards.nonEmpty
-        </td>
-      </tr><tr>
-        <td>
-          10
-        </td>
-        <td>
-          9
-        </td>
-        <td>
-          213
-          -
-          368
-        </td>
-        <td>
-          Block
-        </td>
-        <td>
-          &lt;nosymbol&gt;
-        </td>
-        <td>
-          
-        </td>
-        <td style="background: #F0ADAD">
-          {
-  scala.Predef.println((&quot;\nLoad successful. Loaded &quot;.+(Main.this.alphaCards.size).+(&quot; cards.&quot;): String));
-  scala.Predef.println(&quot;First Card Details:&quot;);
-  scala.Predef.println(Main.this.alphaCards.head)
-}
-        </td>
-      </tr><tr>
-        <td>
-          11
-        </td>
-        <td>
-          5
-        </td>
-        <td>
-          224
-          -
-          287
+          245
         </td>
         <td>
           Apply
@@ -197,19 +150,76 @@
           
         </td>
         <td style="background: #F0ADAD">
-          scala.Predef.println((&quot;\nLoad successful. Loaded &quot;.+(Main.this.alphaCards.size).+(&quot; cards.&quot;): String))
+          scala.Predef.println((&quot;Successfully loaded &quot;.+(Main.this.cards.size).+(&quot; cards!\n&quot;): String))
         </td>
       </tr><tr>
         <td>
           12
         </td>
         <td>
+          14
+        </td>
+        <td>
+          273
+          -
+          632
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.immutable.List.foreach
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #F0ADAD">
+          Main.this.cards.foreach[Unit](((card: mtg.cards.Card) =&gt; {
+  scala.Predef.println((&quot;Name: &quot;.+(card.name): String));
+  scala.Predef.println((&quot;Type: &quot;.+(card.`type`): String));
+  scala.Predef.println((&quot;Mana Cost: &quot;.+(card.mana_cost): String));
+  scala.Predef.println((&quot;Rarity: &quot;.+(card.rarity): String));
+  scala.Predef.println((&quot;Set: &quot;.+(card.set): String));
+  scala.Predef.println((&quot;Power: &quot;.+(card.power.getOrElse[Any](&quot;-&quot;)): String));
+  scala.Predef.println((&quot;Toughness: &quot;.+(card.toughness.getOrElse[Any](&quot;-&quot;)): String));
+  scala.Predef.println(scala.Predef.augmentString(&quot;-&quot;).*(40))
+}))
+        </td>
+      </tr><tr>
+        <td>
+          13
+        </td>
+        <td>
+          5
+        </td>
+        <td>
+          302
+          -
+          332
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Predef.println
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #F0ADAD">
+          scala.Predef.println((&quot;Name: &quot;.+(card.name): String))
+        </td>
+      </tr><tr>
+        <td>
+          14
+        </td>
+        <td>
           6
         </td>
         <td>
-          297
+          338
           -
-          327
+          370
         </td>
         <td>
           Apply
@@ -221,91 +231,19 @@
           
         </td>
         <td style="background: #F0ADAD">
-          scala.Predef.println(&quot;First Card Details:&quot;)
+          scala.Predef.println((&quot;Type: &quot;.+(card.`type`): String))
         </td>
       </tr><tr>
         <td>
-          13
-        </td>
-        <td>
-          8
-        </td>
-        <td>
-          337
-          -
-          361
-        </td>
-        <td>
-          Apply
-        </td>
-        <td>
-          scala.Predef.println
-        </td>
-        <td>
-          
-        </td>
-        <td style="background: #F0ADAD">
-          scala.Predef.println(Main.this.alphaCards.head)
-        </td>
-      </tr><tr>
-        <td>
-          13
+          15
         </td>
         <td>
           7
         </td>
         <td>
-          345
+          376
           -
-          360
-        </td>
-        <td>
-          Select
-        </td>
-        <td>
-          scala.collection.IterableOps.head
-        </td>
-        <td>
-          
-        </td>
-        <td style="background: #F0ADAD">
-          Main.this.alphaCards.head
-        </td>
-      </tr><tr>
-        <td>
-          15
-        </td>
-        <td>
-          11
-        </td>
-        <td>
-          385
-          -
-          432
-        </td>
-        <td>
-          Block
-        </td>
-        <td>
-          scala.Predef.println
-        </td>
-        <td>
-          
-        </td>
-        <td style="background: #F0ADAD">
-          scala.Predef.println(&quot;\nLoad failed. No cards were loaded.&quot;)
-        </td>
-      </tr><tr>
-        <td>
-          15
-        </td>
-        <td>
-          10
-        </td>
-        <td>
-          385
-          -
-          432
+          416
         </td>
         <td>
           Apply
@@ -317,7 +255,151 @@
           
         </td>
         <td style="background: #F0ADAD">
-          scala.Predef.println(&quot;\nLoad failed. No cards were loaded.&quot;)
+          scala.Predef.println((&quot;Mana Cost: &quot;.+(card.mana_cost): String))
+        </td>
+      </tr><tr>
+        <td>
+          16
+        </td>
+        <td>
+          8
+        </td>
+        <td>
+          422
+          -
+          456
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Predef.println
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #F0ADAD">
+          scala.Predef.println((&quot;Rarity: &quot;.+(card.rarity): String))
+        </td>
+      </tr><tr>
+        <td>
+          17
+        </td>
+        <td>
+          9
+        </td>
+        <td>
+          462
+          -
+          490
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Predef.println
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #F0ADAD">
+          scala.Predef.println((&quot;Set: &quot;.+(card.set): String))
+        </td>
+      </tr><tr>
+        <td>
+          18
+        </td>
+        <td>
+          10
+        </td>
+        <td>
+          496
+          -
+          543
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Predef.println
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #F0ADAD">
+          scala.Predef.println((&quot;Power: &quot;.+(card.power.getOrElse[Any](&quot;-&quot;)): String))
+        </td>
+      </tr><tr>
+        <td>
+          19
+        </td>
+        <td>
+          11
+        </td>
+        <td>
+          549
+          -
+          604
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Predef.println
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #F0ADAD">
+          scala.Predef.println((&quot;Toughness: &quot;.+(card.toughness.getOrElse[Any](&quot;-&quot;)): String))
+        </td>
+      </tr><tr>
+        <td>
+          20
+        </td>
+        <td>
+          13
+        </td>
+        <td>
+          610
+          -
+          627
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Predef.println
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #F0ADAD">
+          scala.Predef.println(scala.Predef.augmentString(&quot;-&quot;).*(40))
+        </td>
+      </tr><tr>
+        <td>
+          20
+        </td>
+        <td>
+          12
+        </td>
+        <td>
+          618
+          -
+          626
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.StringOps.*
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #F0ADAD">
+          scala.Predef.augmentString(&quot;-&quot;).*(40)
         </td>
       </tr>
     </table>

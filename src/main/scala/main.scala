@@ -1,17 +1,22 @@
-package mtg
-
 import mtg.cards.CardLoader
 
 object Main extends App {
-    println("Starting MTG Alpha Simulator Load Test...")
-    
-    val alphaCards = CardLoader.loadCards()
+  println("=== Magic the Gathering Card Loader ===")
 
-    if (alphaCards.nonEmpty) {
-        println(s"\nLoad successful. Loaded ${alphaCards.size} cards.")
-        println("First Card Details:")
-        println(alphaCards.head)
-    } else {
-        println("\nLoad failed. No cards were loaded.")
-    }
+  // Karten laden (Standarddatei)
+  val cards = CardLoader.loadCards()
+
+  println(s"Successfully loaded ${cards.size} cards!\n")
+
+  // Karten anzeigen
+  cards.foreach { card =>
+    println(s"Name: ${card.name}")
+    println(s"Type: ${card.`type`}")
+    println(s"Mana Cost: ${card.mana_cost}")
+    println(s"Rarity: ${card.rarity}")
+    println(s"Set: ${card.set}")
+    println(s"Power: ${card.power.getOrElse("-")}")
+    println(s"Toughness: ${card.toughness.getOrElse("-")}")
+    println("-" * 40)
+  }
 }
