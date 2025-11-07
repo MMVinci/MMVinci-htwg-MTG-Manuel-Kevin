@@ -1,0 +1,8 @@
+{
+  "meta": {
+    "version": "1.0.0"
+  },
+  "error_data": [ 
+    { "name": "Diese Struktur ist falsch", "reason": "Fehlendes 'data'-Feld" }
+  ]
+}

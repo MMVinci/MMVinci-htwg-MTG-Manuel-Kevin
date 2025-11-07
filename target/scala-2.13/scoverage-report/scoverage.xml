@@ -1,105 +1,279 @@
 <scoverage 
-statement-count="27" statements-invoked="13" statement-rate="48.15" branch-rate="100.00" version="1.0" timestamp="1762497693500">
+statement-count="83" statements-invoked="66" statement-rate="79.52" branch-rate="80.00" version="1.0" timestamp="1762511021252">
     <packages>
-        <package name="&lt;empty&gt;" statement-count="14" statements-invoked="0" statement-rate="0.00">
+        <package name="mtg.cards" statement-count="83" statements-invoked="66" statement-rate="79.52">
             <classes>
                 <class 
-                name="Main" filename="main.scala" statement-count="14" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                name="mtg.cards.CardManager" filename="mtg\cards\CardManager.scala" statement-count="59" statements-invoked="42" statement-rate="71.19" branch-rate="80.00">
                     <methods>
                         <method 
-                        name="&lt;empty&gt;/Main/&lt;none&gt;" statement-count="14" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                        name="mtg.cards/CardManager/showCard" statement-count="13" statements-invoked="2" statement-rate="15.38" branch-rate="50.00">
                             <statements>
                                 <statement 
-                                package="&lt;empty&gt;" class="Main" class-type="Object" full-class-name="Main" source="C:\Users\manue\Desktop\MTG-Simulator\src\main\scala\main.scala" method="&lt;none&gt;" start="422" end="456" line="16" branch="false" invocation-count="0" ignored="false">
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="showCard" start="3166" end="3177" line="74" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="&lt;empty&gt;" class="Main" class-type="Object" full-class-name="Main" source="C:\Users\manue\Desktop\MTG-Simulator\src\main\scala\main.scala" method="&lt;none&gt;" start="549" end="604" line="19" branch="false" invocation-count="0" ignored="false">
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="showCard" start="2894" end="2900" line="67" branch="true" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="&lt;empty&gt;" class="Main" class-type="Object" full-class-name="Main" source="C:\Users\manue\Desktop\MTG-Simulator\src\main\scala\main.scala" method="&lt;none&gt;" start="174" end="174" line="7" branch="false" invocation-count="0" ignored="false">
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="showCard" start="3021" end="3054" line="71" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="&lt;empty&gt;" class="Main" class-type="Object" full-class-name="Main" source="C:\Users\manue\Desktop\MTG-Simulator\src\main\scala\main.scala" method="&lt;none&gt;" start="302" end="332" line="13" branch="false" invocation-count="0" ignored="false">
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="showCard" start="2737" end="2745" line="64" branch="false" invocation-count="1" ignored="false">
 </statement>
                                 <statement 
-                                package="&lt;empty&gt;" class="Main" class-type="Object" full-class-name="Main" source="C:\Users\manue\Desktop\MTG-Simulator\src\main\scala\main.scala" method="&lt;none&gt;" start="273" end="632" line="12" branch="false" invocation-count="0" ignored="false">
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="showCard" start="2860" end="2888" line="67" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="&lt;empty&gt;" class="Main" class-type="Object" full-class-name="Main" source="C:\Users\manue\Desktop\MTG-Simulator\src\main\scala\main.scala" method="&lt;none&gt;" start="610" end="627" line="20" branch="false" invocation-count="0" ignored="false">
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="showCard" start="3125" end="3156" line="73" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="&lt;empty&gt;" class="Main" class-type="Object" full-class-name="Main" source="C:\Users\manue\Desktop\MTG-Simulator\src\main\scala\main.scala" method="&lt;none&gt;" start="191" end="245" line="9" branch="false" invocation-count="0" ignored="false">
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="showCard" start="2836" end="2858" line="67" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="&lt;empty&gt;" class="Main" class-type="Object" full-class-name="Main" source="C:\Users\manue\Desktop\MTG-Simulator\src\main\scala\main.scala" method="&lt;none&gt;" start="376" end="416" line="15" branch="false" invocation-count="0" ignored="false">
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="showCard" start="2894" end="2900" line="67" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="&lt;empty&gt;" class="Main" class-type="Object" full-class-name="Main" source="C:\Users\manue\Desktop\MTG-Simulator\src\main\scala\main.scala" method="&lt;none&gt;" start="496" end="543" line="18" branch="false" invocation-count="0" ignored="false">
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="showCard" start="2981" end="3011" line="70" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="&lt;empty&gt;" class="Main" class-type="Object" full-class-name="Main" source="C:\Users\manue\Desktop\MTG-Simulator\src\main\scala\main.scala" method="&lt;none&gt;" start="60" end="110" line="4" branch="false" invocation-count="0" ignored="false">
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="showCard" start="2920" end="2971" line="69" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="&lt;empty&gt;" class="Main" class-type="Object" full-class-name="Main" source="C:\Users\manue\Desktop\MTG-Simulator\src\main\scala\main.scala" method="&lt;none&gt;" start="462" end="490" line="17" branch="false" invocation-count="0" ignored="false">
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="showCard" start="3065" end="3115" line="72" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="&lt;empty&gt;" class="Main" class-type="Object" full-class-name="Main" source="C:\Users\manue\Desktop\MTG-Simulator\src\main\scala\main.scala" method="&lt;none&gt;" start="618" end="626" line="20" branch="false" invocation-count="0" ignored="false">
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="showCard" start="2777" end="2807" line="66" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="&lt;empty&gt;" class="Main" class-type="Object" full-class-name="Main" source="C:\Users\manue\Desktop\MTG-Simulator\src\main\scala\main.scala" method="&lt;none&gt;" start="163" end="185" line="7" branch="false" invocation-count="0" ignored="false">
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="showCard" start="2860" end="2888" line="67" branch="true" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="mtg.cards/CardManager/main" statement-count="46" statements-invoked="40" statement-rate="86.96" branch-rate="87.50">
+                            <statements>
+                                <statement 
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="main" start="640" end="2543" line="17" branch="true" invocation-count="1" ignored="false">
 </statement>
                                 <statement 
-                                package="&lt;empty&gt;" class="Main" class-type="Object" full-class-name="Main" source="C:\Users\manue\Desktop\MTG-Simulator\src\main\scala\main.scala" method="&lt;none&gt;" start="338" end="370" line="14" branch="false" invocation-count="0" ignored="false">
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="main" start="2160" end="2168" line="47" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="main" start="1669" end="1693" line="38" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="main" start="844" end="885" line="24" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="main" start="1281" end="1304" line="31" branch="true" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="main" start="2244" end="2249" line="50" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="main" start="1785" end="1828" line="41" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="main" start="1113" end="1149" line="27" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="main" start="1488" end="1521" line="35" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="main" start="564" end="564" line="14" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="main" start="2060" end="2074" line="46" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="main" start="655" end="666" line="18" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="main" start="1224" end="1254" line="30" branch="true" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="main" start="1586" end="1642" line="37" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="main" start="2391" end="2429" line="55" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="main" start="1570" end="1584" line="37" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="main" start="2326" end="2328" line="53" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="main" start="1962" end="2012" line="44" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="main" start="640" end="640" line="17" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="main" start="2076" end="2118" line="46" branch="true" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="main" start="1281" end="1304" line="31" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="main" start="1684" end="1692" line="38" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="main" start="792" end="822" line="23" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="main" start="624" end="624" line="17" branch="true" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="main" start="1725" end="1750" line="40" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="main" start="1397" end="1440" line="34" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="main" start="328" end="379" line="10" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="main" start="998" end="1091" line="26" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="main" start="2145" end="2169" line="47" branch="true" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="main" start="1224" end="1254" line="30" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="main" start="610" end="614" line="16" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="main" start="2145" end="2169" line="47" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="main" start="624" end="624" line="17" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="main" start="2271" end="2298" line="51" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="main" start="1975" end="2011" line="44" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="main" start="1475" end="1522" line="35" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="main" start="553" end="575" line="14" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="main" start="1209" end="1222" line="30" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="main" start="2076" end="2118" line="46" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="main" start="1586" end="1642" line="37" branch="true" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="main" start="692" end="707" line="19" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="main" start="1295" end="1303" line="31" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="main" start="2452" end="2517" line="56" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="main" start="1336" end="1361" line="33" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="main" start="1669" end="1693" line="38" branch="true" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="mtg.cards" class="CardManager" class-type="Object" full-class-name="mtg.cards.CardManager" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardManager.scala" method="main" start="907" end="976" line="25" branch="false" invocation-count="1" ignored="false">
 </statement>
                             </statements>
 </method>
                     </methods>
 </class>
-            </classes>
-        </package>
-        <package name="mtg.cards" statement-count="13" statements-invoked="13" statement-rate="100.00">
-            <classes>
                 <class 
-                name="mtg.cards.CardLoader" filename="mtg\cards\CardLoader.scala" statement-count="13" statements-invoked="13" statement-rate="100.00" branch-rate="100.00">
+                name="mtg.cards.CardLoader" filename="mtg\cards\CardLoader.scala" statement-count="24" statements-invoked="24" statement-rate="100.00" branch-rate="100.00">
                     <methods>
                         <method 
-                        name="mtg.cards/CardLoader/loadCards" statement-count="12" statements-invoked="12" statement-rate="100.00" branch-rate="100.00">
+                        name="mtg.cards/CardLoader/loadDefaultCards" statement-count="3" statements-invoked="3" statement-rate="100.00" branch-rate="100.00">
                             <statements>
                                 <statement 
-                                package="mtg.cards" class="CardLoader" class-type="Object" full-class-name="mtg.cards.CardLoader" source="C:\Users\manue\Desktop\MTG-Simulator\src\main\scala\mtg\cards\CardLoader.scala" method="loadCards" start="736" end="803" line="20" branch="false" invocation-count="1" ignored="false">
+                                package="mtg.cards" class="CardLoader" class-type="Object" full-class-name="mtg.cards.CardLoader" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardLoader.scala" method="loadDefaultCards" start="2082" end="2108" line="48" branch="false" invocation-count="1" ignored="false">
 </statement>
                                 <statement 
-                                package="mtg.cards" class="CardLoader" class-type="Object" full-class-name="mtg.cards.CardLoader" source="C:\Users\manue\Desktop\MTG-Simulator\src\main\scala\mtg\cards\CardLoader.scala" method="loadCards" start="413" end="439" line="13" branch="false" invocation-count="1" ignored="false">
+                                package="mtg.cards" class="CardLoader" class-type="Object" full-class-name="mtg.cards.CardLoader" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardLoader.scala" method="loadDefaultCards" start="2092" end="2107" line="48" branch="false" invocation-count="1" ignored="false">
 </statement>
                                 <statement 
-                                package="mtg.cards" class="CardLoader" class-type="Object" full-class-name="mtg.cards.CardLoader" source="C:\Users\manue\Desktop\MTG-Simulator\src\main\scala\mtg\cards\CardLoader.scala" method="loadCards" start="1081" end="1150" line="27" branch="false" invocation-count="1" ignored="false">
+                                package="mtg.cards" class="CardLoader" class-type="Object" full-class-name="mtg.cards.CardLoader" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardLoader.scala" method="loadDefaultCards" start="2118" end="2188" line="49" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="mtg.cards/CardLoader/loadCards" statement-count="20" statements-invoked="20" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="mtg.cards" class="CardLoader" class-type="Object" full-class-name="mtg.cards.CardLoader" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardLoader.scala" method="loadCards" start="1656" end="1715" line="37" branch="false" invocation-count="1" ignored="false">
 </statement>
                                 <statement 
-                                package="mtg.cards" class="CardLoader" class-type="Object" full-class-name="mtg.cards.CardLoader" source="C:\Users\manue\Desktop\MTG-Simulator\src\main\scala\mtg\cards\CardLoader.scala" method="loadCards" start="647" end="647" line="18" branch="false" invocation-count="1" ignored="false">
+                                package="mtg.cards" class="CardLoader" class-type="Object" full-class-name="mtg.cards.CardLoader" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardLoader.scala" method="loadCards" start="877" end="877" line="23" branch="false" invocation-count="1" ignored="false">
 </statement>
                                 <statement 
-                                package="mtg.cards" class="CardLoader" class-type="Object" full-class-name="mtg.cards.CardLoader" source="C:\Users\manue\Desktop\MTG-Simulator\src\main\scala\mtg\cards\CardLoader.scala" method="loadCards" start="629" end="659" line="18" branch="false" invocation-count="1" ignored="false">
+                                package="mtg.cards" class="CardLoader" class-type="Object" full-class-name="mtg.cards.CardLoader" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardLoader.scala" method="loadCards" start="1034" end="1117" line="26" branch="false" invocation-count="2" ignored="false">
 </statement>
                                 <statement 
-                                package="mtg.cards" class="CardLoader" class-type="Object" full-class-name="mtg.cards.CardLoader" source="C:\Users\manue\Desktop\MTG-Simulator\src\main\scala\mtg\cards\CardLoader.scala" method="loadCards" start="361" end="386" line="12" branch="false" invocation-count="1" ignored="false">
+                                package="mtg.cards" class="CardLoader" class-type="Object" full-class-name="mtg.cards.CardLoader" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardLoader.scala" method="loadCards" start="1899" end="1968" line="42" branch="false" invocation-count="1" ignored="false">
 </statement>
                                 <statement 
-                                package="mtg.cards" class="CardLoader" class-type="Object" full-class-name="mtg.cards.CardLoader" source="C:\Users\manue\Desktop\MTG-Simulator\src\main\scala\mtg\cards\CardLoader.scala" method="loadCards" start="983" end="993" line="24" branch="false" invocation-count="1" ignored="false">
+                                package="mtg.cards" class="CardLoader" class-type="Object" full-class-name="mtg.cards.CardLoader" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardLoader.scala" method="loadCards" start="423" end="476" line="13" branch="false" invocation-count="2" ignored="false">
 </statement>
                                 <statement 
-                                package="mtg.cards" class="CardLoader" class-type="Object" full-class-name="mtg.cards.CardLoader" source="C:\Users\manue\Desktop\MTG-Simulator\src\main\scala\mtg\cards\CardLoader.scala" method="loadCards" start="355" end="450" line="12" branch="false" invocation-count="1" ignored="false">
+                                package="mtg.cards" class="CardLoader" class-type="Object" full-class-name="mtg.cards.CardLoader" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardLoader.scala" method="loadCards" start="716" end="742" line="18" branch="false" invocation-count="2" ignored="false">
 </statement>
                                 <statement 
-                                package="mtg.cards" class="CardLoader" class-type="Object" full-class-name="mtg.cards.CardLoader" source="C:\Users\manue\Desktop\MTG-Simulator\src\main\scala\mtg\cards\CardLoader.scala" method="loadCards" start="1168" end="1178" line="28" branch="false" invocation-count="1" ignored="false">
+                                package="mtg.cards" class="CardLoader" class-type="Object" full-class-name="mtg.cards.CardLoader" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardLoader.scala" method="loadCards" start="1386" end="1409" line="31" branch="false" invocation-count="2" ignored="false">
 </statement>
                                 <statement 
-                                package="mtg.cards" class="CardLoader" class-type="Object" full-class-name="mtg.cards.CardLoader" source="C:\Users\manue\Desktop\MTG-Simulator\src\main\scala\mtg\cards\CardLoader.scala" method="loadCards" start="388" end="388" line="12" branch="false" invocation-count="1" ignored="false">
+                                package="mtg.cards" class="CardLoader" class-type="Object" full-class-name="mtg.cards.CardLoader" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardLoader.scala" method="loadCards" start="652" end="689" line="17" branch="false" invocation-count="2" ignored="false">
 </statement>
                                 <statement 
-                                package="mtg.cards" class="CardLoader" class-type="Object" full-class-name="mtg.cards.CardLoader" source="C:\Users\manue\Desktop\MTG-Simulator\src\main\scala\mtg\cards\CardLoader.scala" method="loadCards" start="647" end="647" line="18" branch="false" invocation-count="1" ignored="false">
+                                package="mtg.cards" class="CardLoader" class-type="Object" full-class-name="mtg.cards.CardLoader" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardLoader.scala" method="loadCards" start="1327" end="1346" line="30" branch="false" invocation-count="2" ignored="false">
 </statement>
                                 <statement 
-                                package="mtg.cards" class="CardLoader" class-type="Object" full-class-name="mtg.cards.CardLoader" source="C:\Users\manue\Desktop\MTG-Simulator\src\main\scala\mtg\cards\CardLoader.scala" method="loadCards" start="901" end="957" line="23" branch="false" invocation-count="1" ignored="false">
+                                package="mtg.cards" class="CardLoader" class-type="Object" full-class-name="mtg.cards.CardLoader" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardLoader.scala" method="loadCards" start="1463" end="1525" line="33" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="mtg.cards" class="CardLoader" class-type="Object" full-class-name="mtg.cards.CardLoader" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardLoader.scala" method="loadCards" start="646" end="753" line="17" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="mtg.cards" class="CardLoader" class-type="Object" full-class-name="mtg.cards.CardLoader" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardLoader.scala" method="loadCards" start="982" end="1008" line="25" branch="false" invocation-count="2" ignored="false">
+</statement>
+                                <statement 
+                                package="mtg.cards" class="CardLoader" class-type="Object" full-class-name="mtg.cards.CardLoader" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardLoader.scala" method="loadCards" start="1801" end="1811" line="39" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="mtg.cards" class="CardLoader" class-type="Object" full-class-name="mtg.cards.CardLoader" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardLoader.scala" method="loadCards" start="1741" end="1775" line="38" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="mtg.cards" class="CardLoader" class-type="Object" full-class-name="mtg.cards.CardLoader" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardLoader.scala" method="loadCards" start="858" end="889" line="23" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="mtg.cards" class="CardLoader" class-type="Object" full-class-name="mtg.cards.CardLoader" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardLoader.scala" method="loadCards" start="1986" end="1996" line="43" branch="false" invocation-count="2" ignored="false">
+</statement>
+                                <statement 
+                                package="mtg.cards" class="CardLoader" class-type="Object" full-class-name="mtg.cards.CardLoader" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardLoader.scala" method="loadCards" start="678" end="688" line="17" branch="false" invocation-count="2" ignored="false">
+</statement>
+                                <statement 
+                                package="mtg.cards" class="CardLoader" class-type="Object" full-class-name="mtg.cards.CardLoader" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardLoader.scala" method="loadCards" start="1327" end="1337" line="30" branch="false" invocation-count="2" ignored="false">
+</statement>
+                                <statement 
+                                package="mtg.cards" class="CardLoader" class-type="Object" full-class-name="mtg.cards.CardLoader" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardLoader.scala" method="loadCards" start="1281" end="1410" line="31" branch="false" invocation-count="2" ignored="false">
+</statement>
+                                <statement 
+                                package="mtg.cards" class="CardLoader" class-type="Object" full-class-name="mtg.cards.CardLoader" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardLoader.scala" method="loadCards" start="691" end="691" line="17" branch="false" invocation-count="2" ignored="false">
 </statement>
                             </statements>
 </method>
@@ -107,7 +281,7 @@ statement-count="27" statements-invoked="13" statement-rate="48.15" branch-rate=
                         name="mtg.cards/CardLoader/&lt;none&gt;" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
                             <statements>
                                 <statement 
-                                package="mtg.cards" class="CardLoader" class-type="Object" full-class-name="mtg.cards.CardLoader" source="C:\Users\manue\Desktop\MTG-Simulator\src\main\scala\mtg\cards\CardLoader.scala" method="&lt;none&gt;" start="198" end="235" line="8" branch="false" invocation-count="1" ignored="false">
+                                package="mtg.cards" class="CardLoader" class-type="Object" full-class-name="mtg.cards.CardLoader" source="C:\Users\manue\Desktop\SoftwareEngineering\MTG-Simulator\src\main\scala\mtg\cards\CardLoader.scala" method="&lt;none&gt;" start="302" end="340" line="10" branch="false" invocation-count="2" ignored="false">
 </statement>
                             </statements>
 </method>

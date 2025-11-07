@@ -1,0 +1,23 @@
+{
+  "meta": {
+    "version": "1.0.0"
+  },
+  "data": {
+    "Test Card English": {
+      "name": "Test Card English",
+      "language": "English",
+      "manaValue": 1.0,
+      "cardType": "Creature — Test",
+      "supertypes": [], "subtypes": ["Test"], "colors": ["W"], "text": "English.",
+      "keywords": null, "power": "1", "toughness": "1", "loyalty": null, "layout": "normal", "otherFaceIds": null
+    },
+    "Testkarte Deutsch": {
+      "name": "Testkarte Deutsch",
+      "language": "German",
+      "manaValue": 2.0,
+      "cardType": "Creature — Test",
+      "supertypes": [], "subtypes": ["Test"], "colors": ["B"], "text": "Deutsch.",
+      "keywords": null, "power": "2", "toughness": "2", "loyalty": null, "layout": "normal", "otherFaceIds": null
+    }
+  }
+}

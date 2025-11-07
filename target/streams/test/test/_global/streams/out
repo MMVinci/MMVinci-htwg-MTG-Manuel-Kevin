@@ -1,16 +1,15 @@
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(mtg.cards.CardLoaderSpec, org.scalatest.tools.Framework$$anon$1@44faece1, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(mtg.cards.CardLoaderSpec, org.scalatest.tools.Framework$$anon$1@5327c917, false, [SuiteSelector])[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mCardLoaderSpec:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mCardLoader[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should successfully load the list of cards from a valid JSON file[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should correctly parse Black Lotus details[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should correctly parse Shivan Dragon details[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should successfully load only English cards from dragons.json[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should correctly parse Bogardan Hellkite details with the new Card model[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should filter out non-English cards and only load the single English one[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should return an empty list when the file does not exist[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should return an empty list on invalid JSON[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should return an empty list on empty JSON array[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 612 milliseconds.[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 6[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return an empty list on invalid JSON structure (MtgJsonData decoding error)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 408 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 5[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 1, aborted 0[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 6, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 5, failed 0, canceled 0, ignored 0, pending 0[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
 [0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	mtg.cards.CardLoaderSpec[0m

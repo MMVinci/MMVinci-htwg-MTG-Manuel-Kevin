@@ -9,7 +9,7 @@ import io.circe.Json // Wird benötigt, wenn Sie die "meta"-Daten im JSON ignori
 case class Card(
   // Identifikation
   name: String,
-  
+  language: String,
   // Kosten & Werte
   manaCost: Option[String],   // Z.B. "{1}{R}"
   manaValue: Double,          // Das Converted Mana Cost / Mana Value

@@ -1,0 +1,1578 @@
+<html>
+      <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title id="title">
+          mtg\cards\CardManager.scala.html
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/css/theme.default.min.css" type="text/css"/><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/js/jquery.tablesorter.min.js"></script><link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" type="text/css"/><script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script><script type="text/javascript">
+        $(document).ready(function() {$(".tablesorter").tablesorter();});
+      </script>
+        <style>
+          table.codegrid { font-family: monospace; font-size: 12px; width: auto!important; }table.statementlist { width: auto!important; font-size: 13px; } table.codegrid td { padding: 0!important; border: 0!important } table td.linenumber { width: 40px!important; } 
+        </style>
+      </head>
+      <body style="font-family: monospace;">
+        <ul class="nav nav-tabs">
+          <li>
+            <a href="#codegrid" data-toggle="tab">Codegrid</a>
+          </li>
+          <li>
+            <a href="#statementlist" data-toggle="tab">Statement List</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="codegrid">
+            <pre style='font-size: 12pt; font-family: courier, monospace;'>1 <span style=''>package mtg.cards
+</span>2 <span style=''>
+</span>3 <span style=''>import scala.io.StdIn.readLine
+</span>4 <span style=''>
+</span>5 <span style=''>object CardManager {
+</span>6 <span style=''>
+</span>7 <span style=''>    // HINWEIS: CardLoader.loadCards() müsste in CardLoader.loadDefaultCards() umbenannt werden,
+</span>8 <span style=''>    // falls Sie die neue Methode verwenden wollen. Hier belassen wir es bei der alten Signatur.
+</span>9 <span style=''>    def main(args: Array[String]): Unit = {
+</span>10 <span style=''>        </span><span style='background: #AEF1AE'>println(&quot;=== Magic the Gathering Card Manager ===&quot;)</span><span style=''>
+</span>11 <span style=''>
+</span>12 <span style=''>        // Karten laden
+</span>13 <span style=''>        // HINWEIS: Es ist besser, CardLoader.loadDefaultCards() zu verwenden, wenn Sie die neue Logik in CardLoader haben.
+</span>14 <span style=''>        val cards = </span><span style='background: #AEF1AE'>CardLoader.loadCards()</span><span style=''> 
+</span>15 <span style=''>        
+</span>16 <span style=''>        var running = </span><span style='background: #AEF1AE'>true</span><span style=''>
+</span>17 <span style=''>        while (running) </span><span style='background: #AEF1AE'>{
+</span>18 <span style=''></span><span style='background: #AEF1AE'>            print(&quot;&gt; &quot;)
+</span>19 <span style=''></span><span style='background: #AEF1AE'>            val input = readLine().trim 
+</span>20 <span style=''></span><span style='background: #AEF1AE'>
+</span>21 <span style=''></span><span style='background: #AEF1AE'>            input match {
+</span>22 <span style=''></span><span style='background: #AEF1AE'>                case &quot;help!&quot; =&gt;
+</span>23 <span style=''></span><span style='background: #AEF1AE'>                    println(&quot;Available commands:&quot;)
+</span>24 <span style=''></span><span style='background: #AEF1AE'>                    println(&quot;  list: Show all loaded cards.&quot;)
+</span>25 <span style=''></span><span style='background: #AEF1AE'>                    println(&quot;  search &lt;name&gt;: Find cards whose name contains the query.&quot;)
+</span>26 <span style=''></span><span style='background: #AEF1AE'>                    println(&quot;  filter &lt;type&gt;: Find cards whose card type contains the query (e.g., 'creature').&quot;)
+</span>27 <span style=''></span><span style='background: #AEF1AE'>                    println(&quot;  exit: Quit the program.&quot;)
+</span>28 <span style=''></span><span style='background: #AEF1AE'>
+</span>29 <span style=''></span><span style='background: #AEF1AE'>                case &quot;list&quot; =&gt;
+</span>30 <span style=''></span><span style='background: #AEF1AE'>                    if (cards.isEmpty) println(&quot;No cards available.&quot;)
+</span>31 <span style=''></span><span style='background: #AEF1AE'>                    else </span><span style='background: #F0ADAD'>cards.foreach(showCard)</span><span style='background: #AEF1AE'>
+</span>32 <span style=''></span><span style='background: #AEF1AE'>
+</span>33 <span style=''></span><span style='background: #AEF1AE'>                case cmd if </span><span style='background: #F0ADAD'>cmd.startsWith(&quot;search &quot;)</span><span style='background: #AEF1AE'> =&gt;
+</span>34 <span style=''></span><span style='background: #AEF1AE'>                    val name = </span><span style='background: #F0ADAD'>cmd.stripPrefix(&quot;search &quot;).trim.toLowerCase</span><span style='background: #AEF1AE'>
+</span>35 <span style=''></span><span style='background: #AEF1AE'>                    val result = cards.filter(</span><span style='background: #F0ADAD'>_.name.toLowerCase.contains(name)</span><span style='background: #AEF1AE'>)
+</span>36 <span style=''></span><span style='background: #AEF1AE'>                    
+</span>37 <span style=''></span><span style='background: #AEF1AE'>                    if (result.isEmpty) </span><span style='background: #F0ADAD'>println(s&quot;No cards found with name containing '$name'.&quot;)</span><span style='background: #AEF1AE'>
+</span>38 <span style=''></span><span style='background: #AEF1AE'>                    else result.foreach(showCard)
+</span>39 <span style=''></span><span style='background: #AEF1AE'>
+</span>40 <span style=''></span><span style='background: #AEF1AE'>                case cmd if cmd.startsWith(&quot;filter &quot;) =&gt;
+</span>41 <span style=''></span><span style='background: #AEF1AE'>                    val typ = cmd.stripPrefix(&quot;filter &quot;).trim.toLowerCase
+</span>42 <span style=''></span><span style='background: #AEF1AE'>                    
+</span>43 <span style=''></span><span style='background: #AEF1AE'>                    // ✨ KORREKTUR: Verwende 'cardType' anstelle von 'type'
+</span>44 <span style=''></span><span style='background: #AEF1AE'>                    val result = cards.filter(_.cardType.toLowerCase.contains(typ))
+</span>45 <span style=''></span><span style='background: #AEF1AE'>                    
+</span>46 <span style=''></span><span style='background: #AEF1AE'>                    if (result.isEmpty) println(s&quot;No cards found of type '$typ'.&quot;)
+</span>47 <span style=''></span><span style='background: #AEF1AE'>                    else result.foreach(showCard)
+</span>48 <span style=''></span><span style='background: #AEF1AE'>
+</span>49 <span style=''></span><span style='background: #AEF1AE'>                case &quot;exit&quot; | &quot;quit&quot; =&gt;
+</span>50 <span style=''></span><span style='background: #AEF1AE'>                    running = false
+</span>51 <span style=''></span><span style='background: #AEF1AE'>                    println(&quot;Program beendet.&quot;)
+</span>52 <span style=''></span><span style='background: #AEF1AE'>
+</span>53 <span style=''></span><span style='background: #AEF1AE'>                case &quot;&quot; =&gt; // ignore
+</span>54 <span style=''></span><span style='background: #AEF1AE'>                case other =&gt;
+</span>55 <span style=''></span><span style='background: #AEF1AE'>                    println(s&quot;Unknown command: '$other'.&quot;) 
+</span>56 <span style=''></span><span style='background: #AEF1AE'>                    println(&quot;Available commands: help!, list, search, filter, exit.&quot;)
+</span>57 <span style=''></span><span style='background: #AEF1AE'>            }
+</span>58 <span style=''></span><span style='background: #AEF1AE'>        }</span><span style=''>
+</span>59 <span style=''>    }
+</span>60 <span style=''>    
+</span>61 <span style=''>    private def showCard(card: Card): Unit = {
+</span>62 <span style=''>        val pt = (card.power, card.toughness) match {
+</span>63 <span style=''>            case (Some(p), Some(t)) =&gt; s&quot;P/T: $p/$t&quot;
+</span>64 <span style=''>            case _ =&gt; </span><span style='background: #AEF1AE'>&quot;P/T: -&quot;</span><span style=''>
+</span>65 <span style=''>        }
+</span>66 <span style=''>        val cost = </span><span style='background: #F0ADAD'>card.manaCost.getOrElse(&quot;N/A&quot;)</span><span style=''>
+</span>67 <span style=''>        val keywords = if (</span><span style='background: #F0ADAD'>card.keywords.nonEmpty</span><span style=''>) </span><span style='background: #F0ADAD'>card.keywords.mkString(&quot;, &quot;)</span><span style=''> else </span><span style='background: #F0ADAD'>&quot;None&quot;</span><span style=''>
+</span>68 <span style=''>        
+</span>69 <span style=''>        </span><span style='background: #F0ADAD'>println(&quot;----------------------------------------&quot;)</span><span style=''>
+</span>70 <span style=''>        </span><span style='background: #F0ADAD'>println(s&quot;Name: ${card.name}&quot;)</span><span style=''>
+</span>71 <span style=''>        </span><span style='background: #F0ADAD'>println(s&quot;Typ: ${card.cardType}&quot;)</span><span style=''> 
+</span>72 <span style=''>        </span><span style='background: #F0ADAD'>println(s&quot;Kosten: $cost (CMC: ${card.manaValue})&quot;)</span><span style=''>
+</span>73 <span style=''>        </span><span style='background: #F0ADAD'>println(s&quot;Keywords: $keywords&quot;)</span><span style=''>
+</span>74 <span style=''>        </span><span style='background: #F0ADAD'>println(pt)</span><span style=''>
+</span>75 <span style=''>    }
+</span>76 <span style=''>}
+</span></pre>
+          </div>
+          <div class="tab-pane" id="statementlist">
+            <table cellspacing="0" cellpadding="0" class="table statementlist">
+      <tr>
+        <th>Line</th>
+        <th>Stmt Id</th>
+        <th>Pos</th>
+        <th>Tree</th>
+        <th>Symbol</th>
+        <th>Tests</th>
+        <th>Code</th>
+      </tr><tr>
+        <td>
+          10
+        </td>
+        <td>
+          25
+        </td>
+        <td>
+          328
+          -
+          379
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Predef.println
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #AEF1AE">
+          scala.Predef.println(&quot;=== Magic the Gathering Card Manager ===&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          14
+        </td>
+        <td>
+          26
+        </td>
+        <td>
+          564
+          -
+          564
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          mtg.cards.CardLoader.loadCards$default$1
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #AEF1AE">
+          CardLoader.loadCards$default$1
+        </td>
+      </tr><tr>
+        <td>
+          14
+        </td>
+        <td>
+          27
+        </td>
+        <td>
+          553
+          -
+          575
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          mtg.cards.CardLoader.loadCards
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #AEF1AE">
+          CardLoader.loadCards(CardLoader.loadCards$default$1)
+        </td>
+      </tr><tr>
+        <td>
+          16
+        </td>
+        <td>
+          28
+        </td>
+        <td>
+          610
+          -
+          614
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #AEF1AE">
+          true
+        </td>
+      </tr><tr>
+        <td>
+          17
+        </td>
+        <td>
+          68
+        </td>
+        <td>
+          640
+          -
+          2543
+        </td>
+        <td>
+          Block
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #AEF1AE">
+          {
+  {
+    scala.Predef.print(&quot;&gt; &quot;);
+    val input: String = scala.io.StdIn.readLine().trim();
+    input match {
+      case &quot;help!&quot; =&gt; {
+        scala.Predef.println(&quot;Available commands:&quot;);
+        scala.Predef.println(&quot;  list: Show all loaded cards.&quot;);
+        scala.Predef.println(&quot;  search &lt;name&gt;: Find cards whose name contains the query.&quot;);
+        scala.Predef.println(&quot;  filter &lt;type&gt;: Find cards whose card type contains the query (e.g., \'creature\').&quot;);
+        scala.Predef.println(&quot;  exit: Quit the program.&quot;)
+      }
+      case &quot;list&quot; =&gt; if (cards.isEmpty)
+        scala.Predef.println(&quot;No cards available.&quot;)
+      else
+        cards.foreach[Unit](((card: mtg.cards.Card) =&gt; CardManager.this.showCard(card)))
+      case (cmd @ _) if cmd.startsWith(&quot;search &quot;) =&gt; {
+        val name: String = scala.Predef.augmentString(cmd).stripPrefix(&quot;search &quot;).trim().toLowerCase();
+        val result: List[mtg.cards.Card] = cards.filter(((x$1: mtg.cards.Card) =&gt; x$1.name.toLowerCase().contains(name)));
+        if (result.isEmpty)
+          scala.Predef.println((&quot;No cards found with name containing \'&quot;.+(name).+(&quot;\'.&quot;): String))
+        else
+          result.foreach[Unit](((card: mtg.cards.Card) =&gt; CardManager.this.showCard(card)))
+      }
+      case (cmd @ _) if cmd.startsWith(&quot;filter &quot;) =&gt; {
+        val typ: String = scala.Predef.augmentString(cmd).stripPrefix(&quot;filter &quot;).trim().toLowerCase();
+        val result: List[mtg.cards.Card] = cards.filter(((x$2: mtg.cards.Card) =&gt; x$2.cardType.toLowerCase().contains(typ)));
+        if (result.isEmpty)
+          scala.Predef.println((&quot;No cards found of type \'&quot;.+(typ).+(&quot;\'.&quot;): String))
+        else
+          result.foreach[Unit](((card: mtg.cards.Card) =&gt; CardManager.this.showCard(card)))
+      }
+      case (&quot;exit&quot;| &quot;quit&quot;) =&gt; {
+        running = false;
+        scala.Predef.println(&quot;Program beendet.&quot;)
+      }
+      case &quot;&quot; =&gt; ()
+      case (other @ _) =&gt; {
+        scala.Predef.println((&quot;Unknown command: \'&quot;.+(other).+(&quot;\'.&quot;): String));
+        scala.Predef.println(&quot;Available commands: help!, list, search, filter, exit.&quot;)
+      }
+    }
+  };
+  while$1()
+}
+        </td>
+      </tr><tr>
+        <td>
+          17
+        </td>
+        <td>
+          67
+        </td>
+        <td>
+          640
+          -
+          640
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          mtg.cards.CardManager.while$1
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #AEF1AE">
+          while$1()
+        </td>
+      </tr><tr>
+        <td>
+          17
+        </td>
+        <td>
+          70
+        </td>
+        <td>
+          624
+          -
+          624
+        </td>
+        <td>
+          Block
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #AEF1AE">
+          ()
+        </td>
+      </tr><tr>
+        <td>
+          17
+        </td>
+        <td>
+          69
+        </td>
+        <td>
+          624
+          -
+          624
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #AEF1AE">
+          ()
+        </td>
+      </tr><tr>
+        <td>
+          18
+        </td>
+        <td>
+          29
+        </td>
+        <td>
+          655
+          -
+          666
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Predef.print
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #AEF1AE">
+          scala.Predef.print(&quot;&gt; &quot;)
+        </td>
+      </tr><tr>
+        <td>
+          19
+        </td>
+        <td>
+          30
+        </td>
+        <td>
+          692
+          -
+          707
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          java.lang.String.trim
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #AEF1AE">
+          scala.io.StdIn.readLine().trim()
+        </td>
+      </tr><tr>
+        <td>
+          23
+        </td>
+        <td>
+          31
+        </td>
+        <td>
+          792
+          -
+          822
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Predef.println
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #AEF1AE">
+          scala.Predef.println(&quot;Available commands:&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          24
+        </td>
+        <td>
+          32
+        </td>
+        <td>
+          844
+          -
+          885
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Predef.println
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #AEF1AE">
+          scala.Predef.println(&quot;  list: Show all loaded cards.&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          25
+        </td>
+        <td>
+          33
+        </td>
+        <td>
+          907
+          -
+          976
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Predef.println
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #AEF1AE">
+          scala.Predef.println(&quot;  search &lt;name&gt;: Find cards whose name contains the query.&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          26
+        </td>
+        <td>
+          34
+        </td>
+        <td>
+          998
+          -
+          1091
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Predef.println
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #AEF1AE">
+          scala.Predef.println(&quot;  filter &lt;type&gt;: Find cards whose card type contains the query (e.g., \'creature\').&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          27
+        </td>
+        <td>
+          35
+        </td>
+        <td>
+          1113
+          -
+          1149
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Predef.println
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #AEF1AE">
+          scala.Predef.println(&quot;  exit: Quit the program.&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          30
+        </td>
+        <td>
+          38
+        </td>
+        <td>
+          1224
+          -
+          1254
+        </td>
+        <td>
+          Block
+        </td>
+        <td>
+          scala.Predef.println
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #AEF1AE">
+          scala.Predef.println(&quot;No cards available.&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          30
+        </td>
+        <td>
+          37
+        </td>
+        <td>
+          1224
+          -
+          1254
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Predef.println
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #AEF1AE">
+          scala.Predef.println(&quot;No cards available.&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          30
+        </td>
+        <td>
+          36
+        </td>
+        <td>
+          1209
+          -
+          1222
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.collection.immutable.List.isEmpty
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #AEF1AE">
+          cards.isEmpty
+        </td>
+      </tr><tr>
+        <td>
+          31
+        </td>
+        <td>
+          41
+        </td>
+        <td>
+          1281
+          -
+          1304
+        </td>
+        <td>
+          Block
+        </td>
+        <td>
+          scala.collection.immutable.List.foreach
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #F0ADAD">
+          cards.foreach[Unit](((card: mtg.cards.Card) =&gt; CardManager.this.showCard(card)))
+        </td>
+      </tr><tr>
+        <td>
+          31
+        </td>
+        <td>
+          40
+        </td>
+        <td>
+          1281
+          -
+          1304
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.immutable.List.foreach
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #F0ADAD">
+          cards.foreach[Unit](((card: mtg.cards.Card) =&gt; CardManager.this.showCard(card)))
+        </td>
+      </tr><tr>
+        <td>
+          31
+        </td>
+        <td>
+          39
+        </td>
+        <td>
+          1295
+          -
+          1303
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          mtg.cards.CardManager.showCard
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #AEF1AE">
+          CardManager.this.showCard(card)
+        </td>
+      </tr><tr>
+        <td>
+          33
+        </td>
+        <td>
+          42
+        </td>
+        <td>
+          1336
+          -
+          1361
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          java.lang.String.startsWith
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #F0ADAD">
+          cmd.startsWith(&quot;search &quot;)
+        </td>
+      </tr><tr>
+        <td>
+          34
+        </td>
+        <td>
+          43
+        </td>
+        <td>
+          1397
+          -
+          1440
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          java.lang.String.toLowerCase
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #F0ADAD">
+          scala.Predef.augmentString(cmd).stripPrefix(&quot;search &quot;).trim().toLowerCase()
+        </td>
+      </tr><tr>
+        <td>
+          35
+        </td>
+        <td>
+          44
+        </td>
+        <td>
+          1488
+          -
+          1521
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          java.lang.String.contains
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #F0ADAD">
+          x$1.name.toLowerCase().contains(name)
+        </td>
+      </tr><tr>
+        <td>
+          35
+        </td>
+        <td>
+          45
+        </td>
+        <td>
+          1475
+          -
+          1522
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.immutable.List.filter
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #AEF1AE">
+          cards.filter(((x$1: mtg.cards.Card) =&gt; x$1.name.toLowerCase().contains(name)))
+        </td>
+      </tr><tr>
+        <td>
+          37
+        </td>
+        <td>
+          47
+        </td>
+        <td>
+          1586
+          -
+          1642
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Predef.println
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #F0ADAD">
+          scala.Predef.println((&quot;No cards found with name containing \'&quot;.+(name).+(&quot;\'.&quot;): String))
+        </td>
+      </tr><tr>
+        <td>
+          37
+        </td>
+        <td>
+          46
+        </td>
+        <td>
+          1570
+          -
+          1584
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.collection.immutable.List.isEmpty
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #AEF1AE">
+          result.isEmpty
+        </td>
+      </tr><tr>
+        <td>
+          37
+        </td>
+        <td>
+          48
+        </td>
+        <td>
+          1586
+          -
+          1642
+        </td>
+        <td>
+          Block
+        </td>
+        <td>
+          scala.Predef.println
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #AEF1AE">
+          scala.Predef.println((&quot;No cards found with name containing \'&quot;.+(name).+(&quot;\'.&quot;): String))
+        </td>
+      </tr><tr>
+        <td>
+          38
+        </td>
+        <td>
+          50
+        </td>
+        <td>
+          1669
+          -
+          1693
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.immutable.List.foreach
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #AEF1AE">
+          result.foreach[Unit](((card: mtg.cards.Card) =&gt; CardManager.this.showCard(card)))
+        </td>
+      </tr><tr>
+        <td>
+          38
+        </td>
+        <td>
+          49
+        </td>
+        <td>
+          1684
+          -
+          1692
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          mtg.cards.CardManager.showCard
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #AEF1AE">
+          CardManager.this.showCard(card)
+        </td>
+      </tr><tr>
+        <td>
+          38
+        </td>
+        <td>
+          51
+        </td>
+        <td>
+          1669
+          -
+          1693
+        </td>
+        <td>
+          Block
+        </td>
+        <td>
+          scala.collection.immutable.List.foreach
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #AEF1AE">
+          result.foreach[Unit](((card: mtg.cards.Card) =&gt; CardManager.this.showCard(card)))
+        </td>
+      </tr><tr>
+        <td>
+          40
+        </td>
+        <td>
+          52
+        </td>
+        <td>
+          1725
+          -
+          1750
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          java.lang.String.startsWith
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #AEF1AE">
+          cmd.startsWith(&quot;filter &quot;)
+        </td>
+      </tr><tr>
+        <td>
+          41
+        </td>
+        <td>
+          53
+        </td>
+        <td>
+          1785
+          -
+          1828
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          java.lang.String.toLowerCase
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #AEF1AE">
+          scala.Predef.augmentString(cmd).stripPrefix(&quot;filter &quot;).trim().toLowerCase()
+        </td>
+      </tr><tr>
+        <td>
+          44
+        </td>
+        <td>
+          55
+        </td>
+        <td>
+          1962
+          -
+          2012
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.immutable.List.filter
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #AEF1AE">
+          cards.filter(((x$2: mtg.cards.Card) =&gt; x$2.cardType.toLowerCase().contains(typ)))
+        </td>
+      </tr><tr>
+        <td>
+          44
+        </td>
+        <td>
+          54
+        </td>
+        <td>
+          1975
+          -
+          2011
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          java.lang.String.contains
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #AEF1AE">
+          x$2.cardType.toLowerCase().contains(typ)
+        </td>
+      </tr><tr>
+        <td>
+          46
+        </td>
+        <td>
+          56
+        </td>
+        <td>
+          2060
+          -
+          2074
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.collection.immutable.List.isEmpty
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #AEF1AE">
+          result.isEmpty
+        </td>
+      </tr><tr>
+        <td>
+          46
+        </td>
+        <td>
+          58
+        </td>
+        <td>
+          2076
+          -
+          2118
+        </td>
+        <td>
+          Block
+        </td>
+        <td>
+          scala.Predef.println
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #AEF1AE">
+          scala.Predef.println((&quot;No cards found of type \'&quot;.+(typ).+(&quot;\'.&quot;): String))
+        </td>
+      </tr><tr>
+        <td>
+          46
+        </td>
+        <td>
+          57
+        </td>
+        <td>
+          2076
+          -
+          2118
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Predef.println
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #AEF1AE">
+          scala.Predef.println((&quot;No cards found of type \'&quot;.+(typ).+(&quot;\'.&quot;): String))
+        </td>
+      </tr><tr>
+        <td>
+          47
+        </td>
+        <td>
+          59
+        </td>
+        <td>
+          2160
+          -
+          2168
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          mtg.cards.CardManager.showCard
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #AEF1AE">
+          CardManager.this.showCard(card)
+        </td>
+      </tr><tr>
+        <td>
+          47
+        </td>
+        <td>
+          61
+        </td>
+        <td>
+          2145
+          -
+          2169
+        </td>
+        <td>
+          Block
+        </td>
+        <td>
+          scala.collection.immutable.List.foreach
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #AEF1AE">
+          result.foreach[Unit](((card: mtg.cards.Card) =&gt; CardManager.this.showCard(card)))
+        </td>
+      </tr><tr>
+        <td>
+          47
+        </td>
+        <td>
+          60
+        </td>
+        <td>
+          2145
+          -
+          2169
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.immutable.List.foreach
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #AEF1AE">
+          result.foreach[Unit](((card: mtg.cards.Card) =&gt; CardManager.this.showCard(card)))
+        </td>
+      </tr><tr>
+        <td>
+          50
+        </td>
+        <td>
+          62
+        </td>
+        <td>
+          2244
+          -
+          2249
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #AEF1AE">
+          false
+        </td>
+      </tr><tr>
+        <td>
+          51
+        </td>
+        <td>
+          63
+        </td>
+        <td>
+          2271
+          -
+          2298
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Predef.println
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #AEF1AE">
+          scala.Predef.println(&quot;Program beendet.&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          53
+        </td>
+        <td>
+          64
+        </td>
+        <td>
+          2326
+          -
+          2328
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #AEF1AE">
+          ()
+        </td>
+      </tr><tr>
+        <td>
+          55
+        </td>
+        <td>
+          65
+        </td>
+        <td>
+          2391
+          -
+          2429
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Predef.println
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #AEF1AE">
+          scala.Predef.println((&quot;Unknown command: \'&quot;.+(other).+(&quot;\'.&quot;): String))
+        </td>
+      </tr><tr>
+        <td>
+          56
+        </td>
+        <td>
+          66
+        </td>
+        <td>
+          2452
+          -
+          2517
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Predef.println
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #AEF1AE">
+          scala.Predef.println(&quot;Available commands: help!, list, search, filter, exit.&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          64
+        </td>
+        <td>
+          71
+        </td>
+        <td>
+          2737
+          -
+          2745
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #AEF1AE">
+          &quot;P/T: -&quot;
+        </td>
+      </tr><tr>
+        <td>
+          66
+        </td>
+        <td>
+          72
+        </td>
+        <td>
+          2777
+          -
+          2807
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Option.getOrElse
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #F0ADAD">
+          card.manaCost.getOrElse[String](&quot;N/A&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          67
+        </td>
+        <td>
+          77
+        </td>
+        <td>
+          2894
+          -
+          2900
+        </td>
+        <td>
+          Block
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #F0ADAD">
+          &quot;None&quot;
+        </td>
+      </tr><tr>
+        <td>
+          67
+        </td>
+        <td>
+          74
+        </td>
+        <td>
+          2860
+          -
+          2888
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.IterableOnceOps.mkString
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #F0ADAD">
+          scala.this.Option.option2Iterable[List[String]](card.keywords).mkString(&quot;, &quot;)
+        </td>
+      </tr><tr>
+        <td>
+          67
+        </td>
+        <td>
+          73
+        </td>
+        <td>
+          2836
+          -
+          2858
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.Option.nonEmpty
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #F0ADAD">
+          card.keywords.nonEmpty
+        </td>
+      </tr><tr>
+        <td>
+          67
+        </td>
+        <td>
+          76
+        </td>
+        <td>
+          2894
+          -
+          2900
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #F0ADAD">
+          &quot;None&quot;
+        </td>
+      </tr><tr>
+        <td>
+          67
+        </td>
+        <td>
+          75
+        </td>
+        <td>
+          2860
+          -
+          2888
+        </td>
+        <td>
+          Block
+        </td>
+        <td>
+          scala.collection.IterableOnceOps.mkString
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #AEF1AE">
+          scala.this.Option.option2Iterable[List[String]](card.keywords).mkString(&quot;, &quot;)
+        </td>
+      </tr><tr>
+        <td>
+          69
+        </td>
+        <td>
+          78
+        </td>
+        <td>
+          2920
+          -
+          2971
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Predef.println
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #F0ADAD">
+          scala.Predef.println(&quot;----------------------------------------&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          70
+        </td>
+        <td>
+          79
+        </td>
+        <td>
+          2981
+          -
+          3011
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Predef.println
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #F0ADAD">
+          scala.Predef.println((&quot;Name: &quot;.+(card.name): String))
+        </td>
+      </tr><tr>
+        <td>
+          71
+        </td>
+        <td>
+          80
+        </td>
+        <td>
+          3021
+          -
+          3054
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Predef.println
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #F0ADAD">
+          scala.Predef.println((&quot;Typ: &quot;.+(card.cardType): String))
+        </td>
+      </tr><tr>
+        <td>
+          72
+        </td>
+        <td>
+          81
+        </td>
+        <td>
+          3065
+          -
+          3115
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Predef.println
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #F0ADAD">
+          scala.Predef.println((&quot;Kosten: &quot;.+(cost).+(&quot; (CMC: &quot;).+(card.manaValue).+(&quot;)&quot;): String))
+        </td>
+      </tr><tr>
+        <td>
+          73
+        </td>
+        <td>
+          82
+        </td>
+        <td>
+          3125
+          -
+          3156
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Predef.println
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #F0ADAD">
+          scala.Predef.println((&quot;Keywords: &quot;.+(keywords): String))
+        </td>
+      </tr><tr>
+        <td>
+          74
+        </td>
+        <td>
+          83
+        </td>
+        <td>
+          3166
+          -
+          3177
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Predef.println
+        </td>
+        <td>
+          
+        </td>
+        <td style="background: #F0ADAD">
+          scala.Predef.println(pt)
+        </td>
+      </tr>
+    </table>
+          </div>
+        </div>
+      </body>
+    </html>

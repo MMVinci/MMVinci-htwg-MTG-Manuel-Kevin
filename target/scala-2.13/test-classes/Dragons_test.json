@@ -1,0 +1,682 @@
+{
+  "meta": {
+    "date": "2025-11-06",
+    "version": "5.2.2+20251106"
+  },
+  "data": {
+    "Bloodmark Mentor": {
+      "name": "Bloodmark Mentor",
+      "language": "English",
+      "manaCost": "{1}{R}",
+      "manaValue": 2.0,
+      "cardType": "Creature — Goblin Warrior",
+      "supertypes": [],
+      "subtypes": [
+        "Goblin",
+        "Warrior"
+      ],
+      "colors": [
+        "R"
+      ],
+      "text": "Red creatures you control have first strike.",
+      "keywords": null,
+      "power": "1",
+      "toughness": "1",
+      "loyalty": null,
+      "layout": "normal",
+      "otherFaceIds": null
+    },
+    "Bogardan Hellkite": {
+      "name": "Bogardan Hellkite",
+      "language": "English",
+      "manaCost": "{6}{R}{R}",
+      "manaValue": 8.0,
+      "cardType": "Creature — Dragon",
+      "supertypes": [],
+      "subtypes": [
+        "Dragon"
+      ],
+      "colors": [
+        "R"
+      ],
+      "text": "Flash\nFlying\nWhen this creature enters, it deals 5 damage divided as you choose among any number of targets.",
+      "keywords": [
+        "Flash",
+        "Flying"
+      ],
+      "power": "5",
+      "toughness": "5",
+      "loyalty": null,
+      "layout": "normal",
+      "otherFaceIds": null
+    },
+    "Bogardan Rager": {
+      "name": "Bogardan Rager",
+      "language": "English",
+      "manaCost": "{5}{R}",
+      "manaValue": 6.0,
+      "cardType": "Creature — Elemental",
+      "supertypes": [],
+      "subtypes": [
+        "Elemental"
+      ],
+      "colors": [
+        "R"
+      ],
+      "text": "Flash (You may cast this spell any time you could cast an instant.)\nWhen this creature enters, target creature gets +4/+0 until end of turn.",
+      "keywords": [
+        "Flash"
+      ],
+      "power": "3",
+      "toughness": "4",
+      "loyalty": null,
+      "layout": "normal",
+      "otherFaceIds": null
+    },
+    "Cinder Wall": {
+      "name": "Cinder Wall",
+      "language": "English",
+      "manaCost": "{R}",
+      "manaValue": 1.0,
+      "cardType": "Creature — Wall",
+      "supertypes": [],
+      "subtypes": [
+        "Wall"
+      ],
+      "colors": [
+        "R"
+      ],
+      "text": "Defender\nWhen this creature blocks, destroy it at end of combat.",
+      "keywords": [
+        "Defender"
+      ],
+      "power": "3",
+      "toughness": "3",
+      "loyalty": null,
+      "layout": "normal",
+      "otherFaceIds": null
+    },
+    "Dragon Whelp": {
+      "name": "Dragon Whelp",
+      "language": "English",
+      "manaCost": "{2}{R}{R}",
+      "manaValue": 4.0,
+      "cardType": "Creature — Dragon",
+      "supertypes": [],
+      "subtypes": [
+        "Dragon"
+      ],
+      "colors": [
+        "R"
+      ],
+      "text": "Flying\n{R}: This creature gets +1/+0 until end of turn. If this ability has been activated four or more times this turn, sacrifice this creature at the beginning of the next end step.",
+      "keywords": [
+        "Flying"
+      ],
+      "power": "2",
+      "toughness": "3",
+      "loyalty": null,
+      "layout": "normal",
+      "otherFaceIds": null
+    },
+    "Dragonspeaker Shaman": {
+      "name": "Dragonspeaker Shaman",
+      "language": "English",
+      "manaCost": "{1}{R}{R}",
+      "manaValue": 3.0,
+      "cardType": "Creature — Human Barbarian Shaman",
+      "supertypes": [],
+      "subtypes": [
+        "Human",
+        "Barbarian",
+        "Shaman"
+      ],
+      "colors": [
+        "R"
+      ],
+      "text": "Dragon spells you cast cost {2} less to cast.",
+      "keywords": null,
+      "power": "2",
+      "toughness": "2",
+      "loyalty": null,
+      "layout": "normal",
+      "otherFaceIds": null
+    },
+    "Fire-Belly Changeling": {
+      "name": "Fire-Belly Changeling",
+      "language": "English",
+      "manaCost": "{1}{R}",
+      "manaValue": 2.0,
+      "cardType": "Creature — Shapeshifter",
+      "supertypes": [],
+      "subtypes": [
+        "Shapeshifter"
+      ],
+      "colors": [
+        "R"
+      ],
+      "text": "Changeling (This card is every creature type.)\n{R}: This creature gets +1/+0 until end of turn. Activate no more than twice each turn.",
+      "keywords": [
+        "Changeling"
+      ],
+      "power": "1",
+      "toughness": "1",
+      "loyalty": null,
+      "layout": "normal",
+      "otherFaceIds": null
+    },
+    "Henge Guardian": {
+      "name": "Henge Guardian",
+      "language": "English",
+      "manaCost": "{5}",
+      "manaValue": 5.0,
+      "cardType": "Artifact Creature — Dragon Wurm",
+      "supertypes": [],
+      "subtypes": [
+        "Dragon",
+        "Wurm"
+      ],
+      "colors": [],
+      "text": "{2}: This creature gains trample until end of turn.",
+      "keywords": null,
+      "power": "3",
+      "toughness": "4",
+      "loyalty": null,
+      "layout": "normal",
+      "otherFaceIds": null
+    },
+    "Kilnmouth Dragon": {
+      "name": "Kilnmouth Dragon",
+      "language": "English",
+      "manaCost": "{5}{R}{R}",
+      "manaValue": 7.0,
+      "cardType": "Creature — Dragon",
+      "supertypes": [],
+      "subtypes": [
+        "Dragon"
+      ],
+      "colors": [
+        "R"
+      ],
+      "text": "Amplify 3 (As this creature enters, put three +1/+1 counters on it for each Dragon card you reveal in your hand.)\nFlying\n{T}: This creature deals damage equal to the number of +1/+1 counters on it to any target.",
+      "keywords": [
+        "Amplify",
+        "Flying"
+      ],
+      "power": "5",
+      "toughness": "5",
+      "loyalty": null,
+      "layout": "normal",
+      "otherFaceIds": null
+    },
+    "Mordant Dragon": {
+      "name": "Mordant Dragon",
+      "language": "English",
+      "manaCost": "{3}{R}{R}{R}",
+      "manaValue": 6.0,
+      "cardType": "Creature — Dragon",
+      "supertypes": [],
+      "subtypes": [
+        "Dragon"
+      ],
+      "colors": [
+        "R"
+      ],
+      "text": "Flying\n{1}{R}: This creature gets +1/+0 until end of turn.\nWhenever this creature deals combat damage to a player, you may have it deal that much damage to target creature that player controls.",
+      "keywords": [
+        "Flying"
+      ],
+      "power": "5",
+      "toughness": "5",
+      "loyalty": null,
+      "layout": "normal",
+      "otherFaceIds": null
+    },
+    "Mudbutton Torchrunner": {
+      "name": "Mudbutton Torchrunner",
+      "language": "English",
+      "manaCost": "{2}{R}",
+      "manaValue": 3.0,
+      "cardType": "Creature — Goblin Warrior",
+      "supertypes": [],
+      "subtypes": [
+        "Goblin",
+        "Warrior"
+      ],
+      "colors": [
+        "R"
+      ],
+      "text": "When this creature dies, it deals 3 damage to any target.",
+      "keywords": null,
+      "power": "1",
+      "toughness": "1",
+      "loyalty": null,
+      "layout": "normal",
+      "otherFaceIds": null
+    },
+    "Shivan Hellkite": {
+      "name": "Shivan Hellkite",
+      "language": "English",
+      "manaCost": "{5}{R}{R}",
+      "manaValue": 7.0,
+      "cardType": "Creature — Dragon",
+      "supertypes": [],
+      "subtypes": [
+        "Dragon"
+      ],
+      "colors": [
+        "R"
+      ],
+      "text": "Flying (This creature can't be blocked except by creatures with flying or reach.)\n{1}{R}: This creature deals 1 damage to any target.",
+      "keywords": [
+        "Flying"
+      ],
+      "power": "5",
+      "toughness": "5",
+      "loyalty": null,
+      "layout": "normal",
+      "otherFaceIds": null
+    },
+    "Skirk Prospector": {
+      "name": "Skirk Prospector",
+      "language": "English",
+      "manaCost": "{R}",
+      "manaValue": 1.0,
+      "cardType": "Creature — Goblin",
+      "supertypes": [],
+      "subtypes": [
+        "Goblin"
+      ],
+      "colors": [
+        "R"
+      ],
+      "text": "Sacrifice a Goblin: Add {R}.",
+      "keywords": null,
+      "power": "1",
+      "toughness": "1",
+      "loyalty": null,
+      "layout": "normal",
+      "otherFaceIds": null
+    },
+    "Thunder Dragon": {
+      "name": "Thunder Dragon",
+      "language": "English",
+      "manaCost": "{5}{R}{R}",
+      "manaValue": 7.0,
+      "cardType": "Creature — Dragon",
+      "supertypes": [],
+      "subtypes": [
+        "Dragon"
+      ],
+      "colors": [
+        "R"
+      ],
+      "text": "Flying\nWhen this creature enters, it deals 3 damage to each creature without flying.",
+      "keywords": [
+        "Flying"
+      ],
+      "power": "5",
+      "toughness": "5",
+      "loyalty": null,
+      "layout": "normal",
+      "otherFaceIds": null
+    },
+    "Voracious Dragon": {
+      "name": "Voracious Dragon",
+      "language": "English",
+      "manaCost": "{3}{R}{R}",
+      "manaValue": 5.0,
+      "cardType": "Creature — Dragon",
+      "supertypes": [],
+      "subtypes": [
+        "Dragon"
+      ],
+      "colors": [
+        "R"
+      ],
+      "text": "Flying\nDevour 1 (As this creature enters, you may sacrifice any number of creatures. It enters with that many +1/+1 counters on it.)\nWhen this creature enters, it deals damage to any target equal to twice the number of Goblins it devoured.",
+      "keywords": [
+        "Devour",
+        "Flying"
+      ],
+      "power": "4",
+      "toughness": "4",
+      "loyalty": null,
+      "layout": "normal",
+      "otherFaceIds": null
+    },
+    "Breath of Darigaaz": {
+      "name": "Breath of Darigaaz",
+      "language": "English",
+      "manaCost": "{1}{R}",
+      "manaValue": 2.0,
+      "cardType": "Sorcery",
+      "supertypes": [],
+      "subtypes": [],
+      "colors": [
+        "R"
+      ],
+      "text": "Kicker {2} (You may pay an additional {2} as you cast this spell.)\nBreath of Darigaaz deals 1 damage to each creature without flying and each player. If this spell was kicked, it deals 4 damage to each creature without flying and each player instead.",
+      "keywords": [
+        "Kicker"
+      ],
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "layout": "normal",
+      "otherFaceIds": null
+    },
+    "Cone of Flame": {
+      "name": "Cone of Flame",
+      "language": "English",
+      "manaCost": "{3}{R}{R}",
+      "manaValue": 5.0,
+      "cardType": "Sorcery",
+      "supertypes": [],
+      "subtypes": [],
+      "colors": [
+        "R"
+      ],
+      "text": "Cone of Flame deals 1 damage to any target, 2 damage to another target, and 3 damage to a third target.",
+      "keywords": null,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "layout": "normal",
+      "otherFaceIds": null
+    },
+    "Dragon Fodder": {
+      "name": "Dragon Fodder",
+      "language": "English",
+      "manaCost": "{1}{R}",
+      "manaValue": 2.0,
+      "cardType": "Sorcery",
+      "supertypes": [],
+      "subtypes": [],
+      "colors": [
+        "R"
+      ],
+      "text": "Create two 1/1 red Goblin creature tokens.",
+      "keywords": null,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "layout": "normal",
+      "otherFaceIds": null
+    },
+    "Jaws of Stone": {
+      "name": "Jaws of Stone",
+      "language": "English",
+      "manaCost": "{5}{R}",
+      "manaValue": 6.0,
+      "cardType": "Sorcery",
+      "supertypes": [],
+      "subtypes": [],
+      "colors": [
+        "R"
+      ],
+      "text": "Jaws of Stone deals X damage divided as you choose among any number of targets, where X is the number of Mountains you control as you cast this spell.",
+      "keywords": null,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "layout": "normal",
+      "otherFaceIds": null
+    },
+    "Spitting Earth": {
+      "name": "Spitting Earth",
+      "language": "English",
+      "manaCost": "{1}{R}",
+      "manaValue": 2.0,
+      "cardType": "Sorcery",
+      "supertypes": [],
+      "subtypes": [],
+      "colors": [
+        "R"
+      ],
+      "text": "Spitting Earth deals damage to target creature equal to the number of Mountains you control.",
+      "keywords": null,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "layout": "normal",
+      "otherFaceIds": null
+    },
+    "Fiery Fall": {
+      "name": "Fiery Fall",
+      "language": "English",
+      "manaCost": "{5}{R}",
+      "manaValue": 6.0,
+      "cardType": "Instant",
+      "supertypes": [],
+      "subtypes": [],
+      "colors": [
+        "R"
+      ],
+      "text": "Fiery Fall deals 5 damage to target creature.\nBasic landcycling {1}{R} ({1}{R}, Discard this card: Search your library for a basic land card, reveal it, put it into your hand, then shuffle.)",
+      "keywords": [
+        "Basic landcycling",
+        "Cycling",
+        "Landcycling"
+      ],
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "layout": "normal",
+      "otherFaceIds": null
+    },
+    "Ghostfire": {
+      "name": "Ghostfire",
+      "language": "English",
+      "manaCost": "{2}{R}",
+      "manaValue": 3.0,
+      "cardType": "Instant",
+      "supertypes": [],
+      "subtypes": [],
+      "colors": [],
+      "text": "Ghostfire is colorless.\nGhostfire deals 3 damage to any target.",
+      "keywords": null,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "layout": "normal",
+      "otherFaceIds": null
+    },
+    "Punishing Fire": {
+      "name": "Punishing Fire",
+      "language": "English",
+      "manaCost": "{1}{R}",
+      "manaValue": 2.0,
+      "cardType": "Instant",
+      "supertypes": [],
+      "subtypes": [],
+      "colors": [
+        "R"
+      ],
+      "text": "Punishing Fire deals 2 damage to any target.\nWhenever an opponent gains life, you may pay {R}. If you do, return this card from your graveyard to your hand.",
+      "keywords": null,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "layout": "normal",
+      "otherFaceIds": null
+    },
+    "Seething Song": {
+      "name": "Seething Song",
+      "language": "English",
+      "manaCost": "{2}{R}",
+      "manaValue": 3.0,
+      "cardType": "Instant",
+      "supertypes": [],
+      "subtypes": [],
+      "colors": [
+        "R"
+      ],
+      "text": "Add {R}{R}{R}{R}{R}.",
+      "keywords": null,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "layout": "normal",
+      "otherFaceIds": null
+    },
+    "Seismic Strike": {
+      "name": "Seismic Strike",
+      "language": "English",
+      "manaCost": "{2}{R}",
+      "manaValue": 3.0,
+      "cardType": "Instant",
+      "supertypes": [],
+      "subtypes": [],
+      "colors": [
+        "R"
+      ],
+      "text": "Seismic Strike deals damage to target creature equal to the number of Mountains you control.",
+      "keywords": null,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "layout": "normal",
+      "otherFaceIds": null
+    },
+    "Temporary Insanity": {
+      "name": "Temporary Insanity",
+      "language": "English",
+      "manaCost": "{3}{R}",
+      "manaValue": 4.0,
+      "cardType": "Instant",
+      "supertypes": [],
+      "subtypes": [],
+      "colors": [
+        "R"
+      ],
+      "text": "Untap target creature with power less than the number of cards in your graveyard and gain control of it until end of turn. That creature gains haste until end of turn.",
+      "keywords": null,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "layout": "normal",
+      "otherFaceIds": null
+    },
+    "Armillary Sphere": {
+      "name": "Armillary Sphere",
+      "language": "English",
+      "manaCost": "{2}",
+      "manaValue": 2.0,
+      "cardType": "Artifact",
+      "supertypes": [],
+      "subtypes": [],
+      "colors": [],
+      "text": "{2}, {T}, Sacrifice this artifact: Search your library for up to two basic land cards, reveal them, put them into your hand, then shuffle.",
+      "keywords": null,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "layout": "normal",
+      "otherFaceIds": null
+    },
+    "Dragon's Claw": {
+      "name": "Dragon's Claw",
+      "language": "English",
+      "manaCost": "{2}",
+      "manaValue": 2.0,
+      "cardType": "Artifact",
+      "supertypes": [],
+      "subtypes": [],
+      "colors": [],
+      "text": "Whenever a player casts a red spell, you may gain 1 life.",
+      "keywords": null,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "layout": "normal",
+      "otherFaceIds": null
+    },
+    "Captive Flame": {
+      "name": "Captive Flame",
+      "language": "English",
+      "manaCost": "{2}{R}",
+      "manaValue": 3.0,
+      "cardType": "Enchantment",
+      "supertypes": [],
+      "subtypes": [],
+      "colors": [
+        "R"
+      ],
+      "text": "{R}: Target creature gets +1/+0 until end of turn.",
+      "keywords": null,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "layout": "normal",
+      "otherFaceIds": null
+    },
+    "Claws of Valakut": {
+      "name": "Claws of Valakut",
+      "language": "English",
+      "manaCost": "{1}{R}{R}",
+      "manaValue": 3.0,
+      "cardType": "Enchantment — Aura",
+      "supertypes": [],
+      "subtypes": [
+        "Aura"
+      ],
+      "colors": [
+        "R"
+      ],
+      "text": "Enchant creature\nEnchanted creature gets +1/+0 for each Mountain you control and has first strike.",
+      "keywords": [
+        "Enchant"
+      ],
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "layout": "normal",
+      "otherFaceIds": null
+    },
+    "Shiv's Embrace": {
+      "name": "Shiv's Embrace",
+      "language": "English",
+      "manaCost": "{2}{R}{R}",
+      "manaValue": 4.0,
+      "cardType": "Enchantment — Aura",
+      "supertypes": [],
+      "subtypes": [
+        "Aura"
+      ],
+      "colors": [
+        "R"
+      ],
+      "text": "Enchant creature\nEnchanted creature gets +2/+2 and has flying.\n{R}: Enchanted creature gets +1/+0 until end of turn.",
+      "keywords": [
+        "Enchant"
+      ],
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "layout": "normal",
+      "otherFaceIds": null
+    },
+    "Mountain": {
+      "name": "Mountain",
+      "language": "English",
+      "manaCost": null,
+      "manaValue": 0.0,
+      "cardType": "Basic Land — Mountain",
+      "supertypes": [
+        "Basic"
+      ],
+      "subtypes": [
+        "Mountain"
+      ],
+      "colors": [],
+      "text": "({T}: Add {R}.)",
+      "keywords": null,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "layout": "normal",
+      "otherFaceIds": null
+    }
+  }
+}
